@@ -4,13 +4,13 @@
                 <div class="header__topbar--inner d-flex align-items-center justify-content-between">
                     <ul class="header__topbar--info d-none d-lg-flex">
                         <li class="header__info--list">
-                            <a class="header__info--link text-white" href="shop.html">STORES</a>
+                            <a class="header__info--link text-white" href="shop.jsp">STORES</a>
                         </li>
                         <li class="header__info--list">
-                            <a class="header__info--link text-white" href="shop.html">DELIVERY</a>
+                            <a class="header__info--link text-white" href="shop.jsp">DELIVERY</a>
                         </li>
                         <li class="header__info--list">
-                            <a class="header__info--link text-white" href="shop.html">GUARANTEE</a>
+                            <a class="header__info--link text-white" href="shop.jsp">GUARANTEE</a>
                         </li>
                         <li class="header__info--list">
                             <a class="header__info--link text-white" href="mailto:info@example.com">
@@ -22,10 +22,10 @@
                     </ul>
                     <div class="header__top--right d-flex align-items-center">
                         <ul class="header__top--link d-flex align-items-center">
-                            <li class="header__link--menu"><a class="header__link--menu__text text-white" href="wishlist.html">
+                            <li class="header__link--menu"><a class="header__link--menu__text text-white" href="wishlist.jsp">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> Wishlist</a>
                             </li>
-                            <li class="header__link--menu"><a class="header__link--menu__text text-white" href="compare.html">
+                            <li class="header__link--menu"><a class="header__link--menu__text text-white" href="compare.jsp">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M400 304l48 48-48 48M400 112l48 48-48 48M64 352h85.19a80 80 0 0066.56-35.62L256 256"/><path d="M64 160h85.19a80 80 0 0166.56 35.62l80.5 120.76A80 80 0 00362.81 352H416M416 160h-53.19a80 80 0 00-66.56 35.62L288 208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>Compare</a>
                             </li>
                         </ul>
@@ -97,15 +97,15 @@
                                         </svg>
                                     </a>
                                     <ul class="header__sub--menu">
-                                        <li class="header__sub--menu__items"><a href="index.html" class="header__sub--menu__link">Home One</a></li>
-                                        <li class="header__sub--menu__items"><a href="index-2.html" class="header__sub--menu__link">Home Two</a></li>
-                                        <li class="header__sub--menu__items"><a href="index-3.html" class="header__sub--menu__link">Home Three</a></li>
-                                        <li class="header__sub--menu__items"><a href="index-4.html" class="header__sub--menu__link">Home Four</a></li>
-                                        <li class="header__sub--menu__items"><a href="index-5.html" class="header__sub--menu__link">Home Five</a></li>
+                                        <li class="header__sub--menu__items"><a href="index.jsp" class="header__sub--menu__link">Home One</a></li>
+                                        <li class="header__sub--menu__items"><a href="index-2.jsp" class="header__sub--menu__link">Home Two</a></li>
+                                        <li class="header__sub--menu__items"><a href="index-3.jsp" class="header__sub--menu__link">Home Three</a></li>
+                                        <li class="header__sub--menu__items"><a href="index-4.jsp" class="header__sub--menu__link">Home Four</a></li>
+                                        <li class="header__sub--menu__items"><a href="index-5.jsp" class="header__sub--menu__link">Home Five</a></li>
                                     </ul>
                                 </li>
                                 <li class="header__menu--items mega__menu--items">
-                                    <a class="header__menu--link" href="shop.html">Shop 
+                                    <a class="header__menu--link" href="shop.jsp">Shop 
                                         <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41">
                                             <path  d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
                                         </svg>
@@ -113,55 +113,55 @@
                                     <ul class="header__mega--menu d-flex">
                                         <li class="header__mega--menu__li">
                                             <ul class="header__mega--sub__menu">
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop.html">Shop Left Sidebar</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-grid.html">Shop Grid</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-grid-list.html">Shop Grid List</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-list.html">Shop List</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop.jsp">Shop Left Sidebar</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-right-sidebar.jsp">Shop Right Sidebar</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-grid.jsp">Shop Grid</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-grid-list.jsp">Shop Grid List</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-list.jsp">Shop List</a></li>
                                             </ul>
                                         </li>
                                         <li class="header__mega--menu__li">
                                             <ul class="header__mega--sub__menu">
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-details.html">Product Details</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-video.html">Video Product</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-details.html">Variable Product</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-left-sidebar.html">Product Left Sidebar</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-gallery.html">Product Gallery</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-details.jsp">Product Details</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-video.jsp">Video Product</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-details.jsp">Variable Product</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-left-sidebar.jsp">Product Left Sidebar</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-gallery.jsp">Product Gallery</a></li>
                                             </ul>
                                         </li>
                                         <li class="header__mega--menu__li">
                                             <ul class="header__mega--sub__menu">
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="my-account.html">My Account</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="my-account-2.html">My Account 2</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="404.html">404 Page</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="login.html">Login Page</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="faq.html">Faq Page</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="my-account.jsp">My Account</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="my-account-2.jsp">My Account 2</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="404.jsp">404 Page</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="login.jsp">Login Page</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="faq.jsp">Faq Page</a></li>
                                             </ul>
                                         </li>
                                         <li class="header__mega--menu__li">
                                             <ul class="header__mega--sub__menu">
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="about.html">About Us</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="contact.html">Contact Us</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="portfolio.html">Portfolio</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="compare.html">Compare</a></li>
-                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="checkout.html">Checkout</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="about.jsp">About Us</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="contact.jsp">Contact Us</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="portfolio.jsp">Portfolio</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="compare.jsp">Compare</a></li>
+                                                <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="checkout.jsp">Checkout</a></li>
                                             </ul>
                                         </li>
                                         <li class="header__mega--menu__li fullscreen__style d-flex">
-                                            <a class="header__mega--menu__banner display-block" href="shop.html"><img class="header__mega--menu__banner--img" src="assets/img/banner/banner7.webp" alt="banner-menu">
+                                            <a class="header__mega--menu__banner display-block" href="shop.jsp"><img class="header__mega--menu__banner--img" src="assets/img/banner/banner7.webp" alt="banner-menu">
                                                 <div class="banner__content">
                                                     <span class="banner__content--subtitle text__secondary mb-10">20% off</span>
                                                     <h2 class="banner__content--title"><span class="banner__content--title__inner">New</span> COLLECTION</h2>
                                                     <span class="banner__content--price">$22.99</span>
                                                 </div>
                                             </a>
-                                            <a class="header__mega--menu__banner display-block" href="shop.html"><img class="header__mega--menu__banner--img" src="assets/img/banner/banner8.webp" alt="banner-menu">
+                                            <a class="header__mega--menu__banner display-block" href="shop.jsp"><img class="header__mega--menu__banner--img" src="assets/img/banner/banner8.webp" alt="banner-menu">
                                                 <div class="banner__content right">
                                                     <span class="banner__badge--style2">20% Off</span>
                                                     <h2 class="banner__content--title"><span class="banner__content--title__inner"> ON </span> SALE <br> PRODUCT</h2>
                                                 </div>
                                             </a>
-                                            <a class="header__mega--menu__banner display-block" href="shop.html"><img class="header__mega--menu__banner--img" src="assets/img/banner/banner10.webp" alt="banner-menu">
+                                            <a class="header__mega--menu__banner display-block" href="shop.jsp"><img class="header__mega--menu__banner--img" src="assets/img/banner/banner10.webp" alt="banner-menu">
                                                 <div class="banner__content">
                                                     <span class="banner__content--subtitle text__secondary mb-10">18% off</span>
                                                     <h2 class="banner__content--title"><span class="banner__content--title__inner">Top</span> COLLECTION</h2>
@@ -172,19 +172,19 @@
                                     </ul>
                                 </li>
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="shop.html">Accesories </a>  
+                                    <a class="header__menu--link" href="shop.jsp">Accesories </a>  
                                 </li>
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="blog.html">Blog 
+                                    <a class="header__menu--link" href="blog.jsp">Blog 
                                         <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12" height="7.41" viewBox="0 0 12 7.41">
                                             <path  d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
                                         </svg>
                                     </a>
                                     <ul class="header__sub--menu">
-                                        <li class="header__sub--menu__items"><a href="blog.html" class="header__sub--menu__link">Blog Grid</a></li>
-                                        <li class="header__sub--menu__items"><a href="blog-details.html" class="header__sub--menu__link">Blog Details</a></li>
-                                        <li class="header__sub--menu__items"><a href="blog-left-sidebar.html" class="header__sub--menu__link">Blog Left Sidebar</a></li>
-                                        <li class="header__sub--menu__items"><a href="blog-right-sidebar.html" class="header__sub--menu__link">Blog Right Sidebar</a></li>
+                                        <li class="header__sub--menu__items"><a href="blog.jsp" class="header__sub--menu__link">Blog Grid</a></li>
+                                        <li class="header__sub--menu__items"><a href="blog-details.jsp" class="header__sub--menu__link">Blog Details</a></li>
+                                        <li class="header__sub--menu__items"><a href="blog-left-sidebar.jsp" class="header__sub--menu__link">Blog Left Sidebar</a></li>
+                                        <li class="header__sub--menu__items"><a href="blog-right-sidebar.jsp" class="header__sub--menu__link">Blog Right Sidebar</a></li>
                                     </ul>
                                 </li>
                                 <li class="header__menu--items">
@@ -194,18 +194,18 @@
                                         </svg>
                                     </a>
                                     <ul class="header__sub--menu">
-                                        <li class="header__sub--menu__items"><a href="about.html" class="header__sub--menu__link">About Us</a></li>
-                                        <li class="header__sub--menu__items"><a href="contact.html" class="header__sub--menu__link">Contact Us</a></li>
-                                        <li class="header__sub--menu__items"><a href="cart.html" class="header__sub--menu__link">Cart Page</a></li>
-                                        <li class="header__sub--menu__items"><a href="portfolio.html" class="header__sub--menu__link">Portfolio Page</a></li>
-                                        <li class="header__sub--menu__items"><a href="wishlist.html" class="header__sub--menu__link">Wishlist Page</a></li>
-                                        <li class="header__sub--menu__items"><a href="privacy-policy.html" class="header__sub--menu__link">Privacy Policy</a></li>
-                                        <li class="header__sub--menu__items"><a href="login.html" class="header__sub--menu__link">Login Page</a></li>
-                                        <li class="header__sub--menu__items"><a href="404.html" class="header__sub--menu__link">Error Page</a></li>
+                                        <li class="header__sub--menu__items"><a href="about.jsp" class="header__sub--menu__link">About Us</a></li>
+                                        <li class="header__sub--menu__items"><a href="contact.jsp" class="header__sub--menu__link">Contact Us</a></li>
+                                        <li class="header__sub--menu__items"><a href="cart.jsp" class="header__sub--menu__link">Cart Page</a></li>
+                                        <li class="header__sub--menu__items"><a href="portfolio.jsp" class="header__sub--menu__link">Portfolio Page</a></li>
+                                        <li class="header__sub--menu__items"><a href="wishlist.jsp" class="header__sub--menu__link">Wishlist Page</a></li>
+                                        <li class="header__sub--menu__items"><a href="privacy-policy.jsp" class="header__sub--menu__link">Privacy Policy</a></li>
+                                        <li class="header__sub--menu__items"><a href="login.jsp" class="header__sub--menu__link">Login Page</a></li>
+                                        <li class="header__sub--menu__items"><a href="404.jsp" class="header__sub--menu__link">Error Page</a></li>
                                     </ul>
                                 </li>
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="contact.html">Contact </a>  
+                                    <a class="header__menu--link" href="contact.jsp">Contact </a>  
                                 </li>
                             </ul>
                         </nav>
@@ -219,13 +219,13 @@
                                 </a>
                             </li>
                             <li class="header__account--items d-none d-lg-block">
-                                <a class="header__account--btn" href="my-account.html">
+                                <a class="header__account--btn" href="my-account.jsp">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                     <span class="visually-hidden">My account</span> 
                                 </a>
                             </li>
                             <li class="header__account--items d-none d-lg-block">
-                                <a class="header__account--btn" href="wishlist.html">
+                                <a class="header__account--btn" href="wishlist.jsp">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                                     <span class="items__count">3</span> 
                                 </a>
@@ -253,7 +253,7 @@
         <div class="offcanvas__header">
             <div class="offcanvas__inner">
                 <div class="offcanvas__logo">
-                    <a class="offcanvas__logo_link" href="index.html">
+                    <a class="offcanvas__logo_link" href="index.jsp">
                         <img src="assets/img/logo/nav-log.webp" alt="Grocee Logo" width="158" height="36">
                     </a>
                     <button class="offcanvas__close--btn" data-offcanvas>close</button>
@@ -261,86 +261,86 @@
                 <nav class="offcanvas__menu">
                     <ul class="offcanvas__menu_ul">
                         <li class="offcanvas__menu_li">
-                            <a class="offcanvas__menu_item" href="index.html">Home</a>
+                            <a class="offcanvas__menu_item" href="index.jsp">Home</a>
                             <ul class="offcanvas__sub_menu">
-                                <li class="offcanvas__sub_menu_li"><a href="index.html" class="offcanvas__sub_menu_item">Home One</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="index-2.html" class="offcanvas__sub_menu_item">Home Two</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="index-3.html" class="offcanvas__sub_menu_item">Home Three</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="index-4.html" class="offcanvas__sub_menu_item">Home Four</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="index-5.html" class="offcanvas__sub_menu_item">Home Five</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="index.jsp" class="offcanvas__sub_menu_item">Home One</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="index-2.jsp" class="offcanvas__sub_menu_item">Home Two</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="index-3.jsp" class="offcanvas__sub_menu_item">Home Three</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="index-4.jsp" class="offcanvas__sub_menu_item">Home Four</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="index-5.jsp" class="offcanvas__sub_menu_item">Home Five</a></li>
                             </ul>
                         </li>
                         <li class="offcanvas__menu_li">
-                            <a class="offcanvas__menu_item" href="shop.html">Shop</a>
+                            <a class="offcanvas__menu_item" href="shop.jsp">Shop</a>
                             <ul class="offcanvas__sub_menu">
                                 <li class="offcanvas__sub_menu_li">
                                     <a href="#" class="offcanvas__sub_menu_item">Column One</a>
                                     <ul class="offcanvas__sub_menu">
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop.html">Shop Left Sidebar</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-grid.html">Shop Grid</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-grid-list.html">Shop Grid List</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-list.html">Shop List</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop.jsp">Shop Left Sidebar</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-right-sidebar.jsp">Shop Right Sidebar</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-grid.jsp">Shop Grid</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-grid-list.jsp">Shop Grid List</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-list.jsp">Shop List</a></li>
                                     </ul>
                                 </li>
                                 <li class="offcanvas__sub_menu_li">
                                     <a href="#" class="offcanvas__sub_menu_item">Column Two</a>
                                     <ul class="offcanvas__sub_menu">
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-details.html">Product Details</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-video.html">Video Product</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-details.html">Variable Product</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-left-sidebar.html">Product Left Sidebar</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-gallery.html">Product Gallery</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-details.jsp">Product Details</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-video.jsp">Video Product</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-details.jsp">Variable Product</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-left-sidebar.jsp">Product Left Sidebar</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-gallery.jsp">Product Gallery</a></li>
                                     </ul>
                                 </li>
                                 <li class="offcanvas__sub_menu_li">
                                     <a href="#" class="offcanvas__sub_menu_item">Column Three</a>
                                     <ul class="offcanvas__sub_menu">
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="my-account.html">My Account</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="my-account-2.html">My Account 2</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="404.html">404 Page</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="login.html">Login Page</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="faq.html">Faq Page</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="my-account.jsp">My Account</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="my-account-2.jsp">My Account 2</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="404.jsp">404 Page</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="login.jsp">Login Page</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="faq.jsp">Faq Page</a></li>
                                     </ul>
                                 </li>
                                 <li class="offcanvas__sub_menu_li">
                                     <a href="#" class="offcanvas__sub_menu_item">Column Three</a>
                                     <ul class="offcanvas__sub_menu">
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="about.html">About Us</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="contact.html">Contact Us</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="portfolio.html">Portfolio</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="compare.html">Compare Pages</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="checkout.html">Checkout page</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="about.jsp">About Us</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="contact.jsp">Contact Us</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="portfolio.jsp">Portfolio</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="compare.jsp">Compare Pages</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="checkout.jsp">Checkout page</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li class="offcanvas__menu_li">
-                            <a class="offcanvas__menu_item" href="blog.html">Blog</a>
+                            <a class="offcanvas__menu_item" href="blog.jsp">Blog</a>
                             <ul class="offcanvas__sub_menu">
-                                <li class="offcanvas__sub_menu_li"><a href="blog.html" class="offcanvas__sub_menu_item">Blog Grid</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="blog-details.html" class="offcanvas__sub_menu_item">Blog Details</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="blog-left-sidebar.html" class="offcanvas__sub_menu_item">Blog Left Sidebar</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="blog-right-sidebar.html" class="offcanvas__sub_menu_item">Blog Right Sidebar</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="blog.jsp" class="offcanvas__sub_menu_item">Blog Grid</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="blog-details.jsp" class="offcanvas__sub_menu_item">Blog Details</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="blog-left-sidebar.jsp" class="offcanvas__sub_menu_item">Blog Left Sidebar</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="blog-right-sidebar.jsp" class="offcanvas__sub_menu_item">Blog Right Sidebar</a></li>
                             </ul>
                         </li>
                         <li class="offcanvas__menu_li">
                             <a class="offcanvas__menu_item" href="#">Pages</a>
                             <ul class="offcanvas__sub_menu">
-                                <li class="offcanvas__sub_menu_li"><a href="about.html" class="offcanvas__sub_menu_item">About Us</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="contact.html" class="offcanvas__sub_menu_item">Contact Us</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="cart.html" class="offcanvas__sub_menu_item">Cart Page</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="portfolio.html" class="offcanvas__sub_menu_item">Portfolio Page</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="wishlist.html" class="offcanvas__sub_menu_item">Wishlist Page</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="login.html" class="offcanvas__sub_menu_item">Login Page</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="404.html" class="offcanvas__sub_menu_item">Error Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="about.jsp" class="offcanvas__sub_menu_item">About Us</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="contact.jsp" class="offcanvas__sub_menu_item">Contact Us</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="cart.jsp" class="offcanvas__sub_menu_item">Cart Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="portfolio.jsp" class="offcanvas__sub_menu_item">Portfolio Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="wishlist.jsp" class="offcanvas__sub_menu_item">Wishlist Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="login.jsp" class="offcanvas__sub_menu_item">Login Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="404.jsp" class="offcanvas__sub_menu_item">Error Page</a></li>
                             </ul>
                         </li>
-                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="about.html">About</a></li>
-                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="contact.html">Contact</a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="about.jsp">About</a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="contact.jsp">Contact</a></li>
                     </ul>
                     <div class="offcanvas__account--items">
-                        <a class="offcanvas__account--items__btn d-flex align-items-center" href="login.html">
+                        <a class="offcanvas__account--items__btn d-flex align-items-center" href="login.jsp">
                             <span class="offcanvas__account--items__icon"> 
                                 <svg xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg> 
                             </span>
@@ -390,7 +390,7 @@
         <div class="offcanvas__stikcy--toolbar">
             <ul class="d-flex justify-content-between">
                 <li class="offcanvas__stikcy--toolbar__list">
-                    <a class="offcanvas__stikcy--toolbar__btn" href="index.html">
+                    <a class="offcanvas__stikcy--toolbar__btn" href="index.jsp">
                     <span class="offcanvas__stikcy--toolbar__icon"> 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="21.51" height="21.443" viewBox="0 0 22 17"><path fill="currentColor" d="M20.9141 7.93359c.1406.11719.2109.26953.2109.45703 0 .14063-.0469.25782-.1406.35157l-.3516.42187c-.1172.14063-.2578.21094-.4219.21094-.1406 0-.2578-.04688-.3515-.14062l-.9844-.77344V15c0 .3047-.1172.5625-.3516.7734-.2109.2344-.4687.3516-.7734.3516h-4.5c-.3047 0-.5742-.1172-.8086-.3516-.2109-.2109-.3164-.4687-.3164-.7734v-3.6562h-2.25V15c0 .3047-.11719.5625-.35156.7734-.21094.2344-.46875.3516-.77344.3516h-4.5c-.30469 0-.57422-.1172-.80859-.3516-.21094-.2109-.31641-.4687-.31641-.7734V8.46094l-.94922.77344c-.11719.09374-.24609.14062-.38672.14062-.16406 0-.30468-.07031-.42187-.21094l-.35157-.42187C.921875 8.625.875 8.50781.875 8.39062c0-.1875.070312-.33984.21094-.45703L9.73438.832031C10.1094.527344 10.5312.375 11 .375s.8906.152344 1.2656.457031l8.6485 7.101559zm-3.7266 6.50391V7.05469L11 1.99219l-6.1875 5.0625v7.38281h3.375v-3.6563c0-.3046.10547-.5624.31641-.7734.23437-.23436.5039-.35155.80859-.35155h3.375c.3047 0 .5625.11719.7734.35155.2344.211.3516.4688.3516.7734v3.6563h3.375z"></path></svg>
                         </span>
@@ -398,7 +398,7 @@
                     </a>
                 </li>
                 <li class="offcanvas__stikcy--toolbar__list">
-                    <a class="offcanvas__stikcy--toolbar__btn" href="shop.html">
+                    <a class="offcanvas__stikcy--toolbar__btn" href="shop.jsp">
                     <span class="offcanvas__stikcy--toolbar__icon"> 
                         <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="18.51" height="17.443" viewBox="0 0 448 512"><path d="M416 32H32A32 32 0 0 0 0 64v384a32 32 0 0 0 32 32h384a32 32 0 0 0 32-32V64a32 32 0 0 0-32-32zm-16 48v152H248V80zm-200 0v152H48V80zM48 432V280h152v152zm200 0V280h152v152z"></path></svg>
                         </span>
@@ -431,7 +431,7 @@
                     </a>
                 </li>
                 <li class="offcanvas__stikcy--toolbar__list">
-                    <a class="offcanvas__stikcy--toolbar__btn" href="wishlist.html">
+                    <a class="offcanvas__stikcy--toolbar__btn" href="wishlist.jsp">
                         <span class="offcanvas__stikcy--toolbar__icon"> 
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                         </span>
@@ -457,10 +457,10 @@
             <div class="minicart__product">
                 <div class="minicart__product--items d-flex">
                     <div class="minicart__thumb">
-                        <a href="product-details.html"><img src="assets/img/product/small-product/product1.webp" alt="prduct-img"></a>
+                        <a href="product-details.jsp"><img src="assets/img/product/small-product/product1.webp" alt="prduct-img"></a>
                     </div>
                     <div class="minicart__text">
-                        <h4 class="minicart__subtitle"><a href="product-details.html">Car & Motorbike Care.</a></h4>
+                        <h4 class="minicart__subtitle"><a href="product-details.jsp">Car & Motorbike Care.</a></h4>
                         <span class="color__variant"><b>Color:</b> Beige</span>
                         <div class="minicart__price">
                             <span class="minicart__current--price">$125.00</span>
@@ -480,10 +480,10 @@
                 </div>
                 <div class="minicart__product--items d-flex">
                     <div class="minicart__thumb">
-                        <a href="product-details.html"><img src="assets/img/product/small-product/product2.webp" alt="prduct-img"></a>
+                        <a href="product-details.jsp"><img src="assets/img/product/small-product/product2.webp" alt="prduct-img"></a>
                     </div>
                     <div class="minicart__text">
-                        <h4 class="minicart__subtitle"><a href="product-details.html">Engine And Drivetrain.</a></h4>
+                        <h4 class="minicart__subtitle"><a href="product-details.jsp">Engine And Drivetrain.</a></h4>
                         <span class="color__variant"><b>Color:</b> Green</span>
                         <div class="minicart__price">
                             <span class="minicart__current--price">$115.00</span>
@@ -514,11 +514,11 @@
             </div>
             <div class="minicart__conditions text-center">
                 <input class="minicart__conditions--input" id="accept" type="checkbox">
-                <label class="minicart__conditions--label" for="accept">I agree with the <a class="minicart__conditions--link" href="privacy-policy.html">Privacy Policy</a></label>
+                <label class="minicart__conditions--label" for="accept">I agree with the <a class="minicart__conditions--link" href="privacy-policy.jsp">Privacy Policy</a></label>
             </div>
             <div class="minicart__button d-flex justify-content-center">
-                <a class="primary__btn minicart__button--link" href="cart.html">View cart</a>
-                <a class="primary__btn minicart__button--link" href="checkout.html">Checkout</a>
+                <a class="primary__btn minicart__button--link" href="cart.jsp">View cart</a>
+                <a class="primary__btn minicart__button--link" href="checkout.jsp">Checkout</a>
             </div>
         </div>
         <!-- End offCanvas minicart -->
