@@ -138,7 +138,7 @@
                         </a>
                     </div>
                     <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
+                        <a class="categories__card--link" href="shop.jsp">
                             <div class="categories__thumbnail">
                                 <img class="categories__thumbnail--img" src="assets/img/categories/categories-product3.webp" alt="categories-img">
                             </div>
@@ -149,7 +149,7 @@
                         </a>
                     </div>
                     <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
+                        <a class="categories__card--link" href="shop.jsp">
                             <div class="categories__thumbnail">
                                 <img class="categories__thumbnail--img" src="assets/img/categories/categories-product4.webp" alt="categories-img">
                             </div>
@@ -160,7 +160,7 @@
                         </a>
                     </div>
                     <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
+                        <a class="categories__card--link" href="shop.jsp">
                             <div class="categories__thumbnail">
                                 <img class="categories__thumbnail--img" src="assets/img/categories/categories-product5.webp" alt="categories-img">
                             </div>
