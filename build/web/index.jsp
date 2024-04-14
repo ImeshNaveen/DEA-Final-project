@@ -68,7 +68,7 @@
     <!-- End preloader -->
     
     <!-- Start header area -->
-    <jsp:include page="nav-bar.jsp"/>
+    <jsp:include page="includings/nav-bar.jsp"/>
     <!-- End header area -->
 
     <main class="main__content_wrapper">
