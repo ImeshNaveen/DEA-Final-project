@@ -68,7 +68,7 @@
     <!-- End preloader -->
     
     <!-- Start header area -->
-    <jsp:include page="nav-bar.jsp"/>
+    <jsp:include page="includings/nav-bar.jsp"/>
     <!-- End header area -->
 
     <main class="main__content_wrapper">
@@ -4074,7 +4074,7 @@
     </main>
 
     <!-- Start footer section --> 
-    <jsp:include page="footer.jsp" />
+    <jsp:include page="includings/footer.jsp" />
     <!-- Quickview Wrapper End -->
 
 
