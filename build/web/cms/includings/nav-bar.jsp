@@ -46,7 +46,7 @@
                                 </a>
                             </li>
                             <li class="header__account--items d-none d-lg-block">
-                                <a class="header__account--btn" href="cms/index.jsp">
+                                <a class="header__account--btn" href="cms/my-account.jsp">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                     <span class="visually-hidden">My account</span> 
                                 </a>
@@ -89,12 +89,81 @@
                     <ul class="offcanvas__menu_ul">
                         <li class="offcanvas__menu_li">
                             <a class="offcanvas__menu_item" href="index.jsp">Home</a>
-                           
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="index.jsp" class="offcanvas__sub_menu_item">Home One</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="index-2.jsp" class="offcanvas__sub_menu_item">Home Two</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="index-3.jsp" class="offcanvas__sub_menu_item">Home Three</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="index-4.jsp" class="offcanvas__sub_menu_item">Home Four</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="index-5.jsp" class="offcanvas__sub_menu_item">Home Five</a></li>
+                            </ul>
                         </li>
                         <li class="offcanvas__menu_li">
                             <a class="offcanvas__menu_item" href="shop.jsp">Shop</a>
-                            
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li">
+                                    <a href="#" class="offcanvas__sub_menu_item">Column One</a>
+                                    <ul class="offcanvas__sub_menu">
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop.jsp">Shop Left Sidebar</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-right-sidebar.jsp">Shop Right Sidebar</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-grid.jsp">Shop Grid</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-grid-list.jsp">Shop Grid List</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="shop-list.jsp">Shop List</a></li>
+                                    </ul>
+                                </li>
+                                <li class="offcanvas__sub_menu_li">
+                                    <a href="#" class="offcanvas__sub_menu_item">Column Two</a>
+                                    <ul class="offcanvas__sub_menu">
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-details.jsp">Product Details</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-video.jsp">Video Product</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-details.jsp">Variable Product</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-left-sidebar.jsp">Product Left Sidebar</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="product-gallery.jsp">Product Gallery</a></li>
+                                    </ul>
+                                </li>
+                                <li class="offcanvas__sub_menu_li">
+                                    <a href="#" class="offcanvas__sub_menu_item">Column Three</a>
+                                    <ul class="offcanvas__sub_menu">
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="my-account.jsp">My Account</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="my-account-2.jsp">My Account 2</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="404.jsp">404 Page</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="login.jsp">Login Page</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="faq.jsp">Faq Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="offcanvas__sub_menu_li">
+                                    <a href="#" class="offcanvas__sub_menu_item">Column Three</a>
+                                    <ul class="offcanvas__sub_menu">
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="about.jsp">About Us</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="contact.jsp">Contact Us</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="portfolio.jsp">Portfolio</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="compare.jsp">Compare Pages</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a class="offcanvas__sub_menu_item" href="checkout.jsp">Checkout page</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="blog.jsp">Blog</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="blog.jsp" class="offcanvas__sub_menu_item">Blog Grid</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="blog-details.jsp" class="offcanvas__sub_menu_item">Blog Details</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="blog-left-sidebar.jsp" class="offcanvas__sub_menu_item">Blog Left Sidebar</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="blog-right-sidebar.jsp" class="offcanvas__sub_menu_item">Blog Right Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#">Pages</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="about.jsp" class="offcanvas__sub_menu_item">About Us</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="contact.jsp" class="offcanvas__sub_menu_item">Contact Us</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="cart.jsp" class="offcanvas__sub_menu_item">Cart Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="portfolio.jsp" class="offcanvas__sub_menu_item">Portfolio Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="wishlist.jsp" class="offcanvas__sub_menu_item">Wishlist Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="login.jsp" class="offcanvas__sub_menu_item">Login Page</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="404.jsp" class="offcanvas__sub_menu_item">Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="about.jsp">About</a></li>
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="contact.jsp">Contact</a></li>
                     </ul>
                     <div class="offcanvas__account--items">
