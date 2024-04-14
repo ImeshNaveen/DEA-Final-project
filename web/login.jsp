@@ -67,10 +67,10 @@
                                     </div>
                                     <div class="account__login--inner">
                                         <label>
-                                            <input class="account__login--input" placeholder="Email Addres" type="email">
+                                            <input class="account__login--input" name="logemail" placeholder="Email Addres" type="email">
                                         </label>
                                         <label>
-                                            <input class="account__login--input" placeholder="Password" type="password">
+                                            <input class="account__login--input" name="logpassword" placeholder="Password" type="password">
                                         </label>
                                         <div class="account__login--remember__forgot mb-15 d-flex justify-content-between align-items-center">
                                             <div class="account__login--remember position__relative">
@@ -94,16 +94,16 @@
                                     </div>
                                     <div class="account__login--inner">
                                         <label>
-                                            <input class="account__login--input" placeholder="Username" type="text">
+                                            <input class="account__login--input" name="regUsername" placeholder="Username" type="text">
                                         </label>
                                         <label>
-                                            <input class="account__login--input" placeholder="Email Addres" type="email">
+                                            <input class="account__login--input" name="regEmail" placeholder="Email Addres" type="email">
                                         </label>
                                         <label>
-                                            <input class="account__login--input" placeholder="Password" type="password">
+                                            <input class="account__login--input" name="regPW" placeholder="Password" type="password">
                                         </label>
                                         <label>
-                                            <input class="account__login--input" placeholder="Confirm Password" type="password">
+                                            <input class="account__login--input" name="regCPW" placeholder="Confirm Password" type="password">
                                         </label>
                                         <button class="account__login--btn primary__btn mb-10" name="buttonClicked" value="register" type="submit">Submit & Register</button>
                                         <%-- <div class="account__login--remember position__relative">

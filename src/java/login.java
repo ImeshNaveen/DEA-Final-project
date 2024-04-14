@@ -26,10 +26,22 @@ public class login extends HttpServlet {
         
         String buttonClicked = request.getParameter("buttonClicked");
         
+        //login user
         if("login".equals(buttonClicked)){
-            out.println("Login!");
-        }if("register".equals(buttonClicked)){
-            out.println("Registered!");
+            String email = request.getParameter("logemail");
+            String password = request.getParameter("logpassword");
+            
+            out.println(email + "<br>" + password);
+        }
+        
+        //register user
+        if("register".equals(buttonClicked)){
+            String username = request.getParameter("regUsername");
+            String email = request.getParameter("regEmail");
+            String PW = request.getParameter("regPW");
+            String confirmPW = request.getParameter("regCPW");
+            
+            out.println(email + "<br>" + username + "<br>" + PW + "<br>" + confirmPW);
         }
     }
 
