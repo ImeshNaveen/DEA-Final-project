@@ -20,7 +20,7 @@
 
   <!-- Custom Style CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
-=
+
 </head>
 
 <body>
@@ -4074,7 +4074,7 @@
     </main>
 
     <!-- Start footer section --> 
-    <jsp:include page="footer.jsp" />
+    <jsp:include page="includings/footer.jsp" />
     <!-- Quickview Wrapper End -->
 
 
