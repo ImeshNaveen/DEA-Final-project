@@ -2,7 +2,7 @@
         <div class="header__topbar bg__primary">
             
         </div>
-        <div class="main__header header__sticky">
+        <div class="main__header header__sticky" style="background:black;>
             <div class="container-fluid">
                 <div class="main__header--inner position__relative d-flex justify-content-between align-items-center">
                     <div class="offcanvas__header--menu__open ">
