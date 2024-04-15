@@ -12,27 +12,27 @@
                         </a>
                     </div>
                     <div class="main__logo">
-                        <h1 class="main__logo--title"><a class="main__logo--link" href="index.jsp"><img class="main__logo--img" src="assets/img/logo/nav-log.webp" alt="logo-img"></a></h1>
+                        <h1 class="main__logo--title"><a class="main__logo--link" href="../index.jsp"><img class="main__logo--img" src="../assets/img/logo/nav-log.webp" alt="logo-img"></a></h1>
                     </div>
                     <div class="header__menu style3 d-none d-lg-block">
                         <nav class="header__menu--navigation">
                             <ul class="header__menu--wrapper d-flex">
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link active" href="index.jsp">Home
+                                    <a class="header__menu--link active" href="../index.jsp">Home
                                     </a>
                                     
                                 </li>
                                 <li class="header__menu--items mega__menu--items">
-                                    <a class="header__menu--link" href="shop.jsp">Shop
+                                    <a class="header__menu--link" href="../shop.jsp">Shop
                                     </a>
                                     
                                 </li>
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="shop.jsp">Accesories </a>  
+                                    <a class="header__menu--link" href="../shop.jsp">Accesories </a>  
                                 </li>
                                 
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="contact.jsp">Contact </a>  
+                                    <a class="header__menu--link" href="../contact.jsp">Contact </a>  
                                 </li>
                             </ul>
                         </nav>
@@ -46,13 +46,13 @@
                                 </a>
                             </li>
                             <li class="header__account--items d-none d-lg-block">
-                                <a class="header__account--btn" href="cms/my-account.jsp">
+                                <a class="header__account--btn" href="index.jsp">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                     <span class="visually-hidden">My account</span> 
                                 </a>
                             </li>
                             <li class="header__account--items d-none d-lg-block">
-                                <a class="header__account--btn" href="wishlist.jsp">
+                                <a class="header__account--btn" href="../wishlist.jsp">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                                     <span class="items__count">3</span> 
                                 </a>
