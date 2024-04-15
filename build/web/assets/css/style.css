@@ -1807,7 +1807,7 @@ body.overlay__active::before {
   position: fixed;
   width: 100%;
   top: 0;
-  background: var(--body-background-color);
+  background:#000;
   left: 0;
   z-index: 99;
   padding: 1rem .5rem;
