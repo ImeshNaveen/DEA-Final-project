@@ -272,7 +272,7 @@ a:focus {
 }
 
 a {
-  color: var(--foreground-color);
+  color: #fff;
 }
 
 a:hover {
@@ -1958,6 +1958,7 @@ body.overlay__active::before {
 
 .main__header {
   padding: 11px 0;
+  background: #000;
 }
 
 @media only screen and (min-width:768px) {
