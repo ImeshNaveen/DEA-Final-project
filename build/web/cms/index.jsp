@@ -61,12 +61,11 @@
                         <ul class="account__menu">
                             <li class="account__menu--list active"><a href="#">Dashboard</a></li>
                             <li class="account__menu--list"><a href="#">My Oders</a></li>
-                            <li class="account__menu--list"><a href="#">Favourite Items</a></li>
                             <li class="account__menu--list"><a href="#">Profile</a></li>
                         </ul>
                     </div>
                     
-                    <jsp:include page="contents/dashboard.jsp"/>
+                    <jsp:include page="contents/my-oders.jsp"/>
                     
                     
                     <!-- this area for contents -->
