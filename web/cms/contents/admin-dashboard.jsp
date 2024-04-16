@@ -63,6 +63,18 @@
             </div>  
                 
         </section>
+    <br><br>
+    
+    <div class="container text-center">
+       
+        <div class="row">
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+
+    </div>
+    
     
     
     
