@@ -20,6 +20,11 @@
  
    <!-- Custom Style CSS -->
    <link rel="stylesheet" href="../assets/css/style.css">
+   <style>
+       .account__left--sidebar a {
+           color:#000;
+       }
+   </style>
 </head>
 
 <body>
@@ -59,13 +64,13 @@
                     <div class="account__left--sidebar">
                         <h2 class="account__content--title mb-20">My Profile</h2>
                         <ul class="account__menu">
-                            <li class="account__menu--list active"><a href="#">Dashboard</a></li>
+                            <li class="account__menu--list"><a href="#">Dashboard</a></li>
                             <li class="account__menu--list"><a href="#">My Oders</a></li>
                             <li class="account__menu--list"><a href="#">Profile</a></li>
                         </ul>
                     </div>
                     
-                    <jsp:include page="contents/my-oders.jsp"/>
+                    <jsp:include page="contents/admin-dashboard.jsp"/>
                     
                     
                     <!-- this area for contents -->
