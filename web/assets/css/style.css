@@ -144,6 +144,10 @@ h1 {
   }
 }
 
+#custom_color{
+  color:#fff;
+}
+
 .h2,
 h2 {
   font-size: 1.7rem;
@@ -272,7 +276,7 @@ a:focus {
 }
 
 a {
-  color: #fff;
+  color: #000;
 }
 
 a:hover {
