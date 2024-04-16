@@ -28,7 +28,7 @@
                                     
                                 </li>
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="shop.jsp">Items </a>  
+                                    <a class="header__menu--link" href="shop.jsp">Accesories </a>  
                                 </li>
                                 
                                 <li class="header__menu--items">
