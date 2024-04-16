@@ -1,17 +1,70 @@
 <div class="account__wrapper">
-    <div class="account__wrapper">
-
-        <div class="input-group mb-3">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
-            </ul>
-            <input type="text" class="form-control" aria-label="Text input with dropdown button">
-        </div>
-
-    </div>
+          <section class="hero__slider--section">
+            <div class="slider__thumbnail--style5 position-relative">
+                
+                <!-- Start search filter area -->
+                <div class="search__filter--section search__filter--style5">
+                    <div class="container">
+                       
+                        <div class="search__filter--inner style5">
+                            <form class="search__filter--form__style2 d-flex" action="#">
+                                <div class="search__filter--select select search__filter--width">
+                                    <select class="search__filter--select__field">
+                                        <option selected value="1">Select Make</option>
+                                        <option value="2">Brake Calipers </option>
+                                        <option value="3">Engine Oil </option>
+                                        <option value="4">Motor Oil </option>
+                                        <option value="5">Oil Filters </option>
+                                    </select>
+                                </div>
+                                <div class="search__filter--select select search__filter--width">
+                                    <select class="search__filter--select__field">
+                                        <option selected value="1">Select Model</option>
+                                        <option value="2">Toyota Combo </option>
+                                        <option value="3">Model 2022 </option>
+                                        <option value="4">Air Boxes  </option>
+                                    </select>
+                                </div>
+                                <div class="search__filter--select select search__filter--width">
+                                    <select class="search__filter--select__field">
+                                        <option selected value="1">Choose Year</option>
+                                        <option value="2">Year 2020 </option>
+                                        <option value="3">Year 2022 </option>
+                                        <option value="4">Year 2024</option>
+                                        <option value="5">Year 2026 </option>
+                                    </select>
+                                </div>
+                                <div class="search__filter--select select search__filter--width">
+                                    <select class="search__filter--select__field">
+                                        <option selected value="1">Select Class</option>
+                                        <option value="2">Class One </option>
+                                        <option value="3">Class Two </option>
+                                        <option value="4">Class Three </option>
+                                        <option value="5">Class Four </option>
+                                    </select>
+                                </div>
+                                <div class="search__filter--select select search__filter--width">
+                                    <select class="search__filter--select__field">
+                                        <option selected value="1">Select Type</option>
+                                        <option value="2">Tail Lights  </option>
+                                        <option value="3">Car Covers  </option>
+                                        <option value="4">Hoods  </option>
+                                        <option value="5">Bumpers  </option>
+                                    </select>
+                                </div>
+                                <div class="search__filter--width">
+                                    <button class="search__filter--btn primary__btn" type="submit">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- End search filter area -->
+            </div>  
+                
+        </section>
+    
+    
+    
+    
 </div>
