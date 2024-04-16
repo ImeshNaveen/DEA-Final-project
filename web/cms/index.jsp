@@ -54,7 +54,7 @@
                         </ul>
                     </div>
                     
-                    <jsp:include page="contents/admin-dashboard.jsp"/>
+                    <jsp:include page="contents/dashboard.jsp"/>
                     
                     
                     <!-- this area for contents -->
