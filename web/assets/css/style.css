@@ -7977,7 +7977,7 @@ input.quickview__value--number {
   background: -webkit-gradient(linear,left top,right top,from(#faeef2),to(#f1f3fb));
   background: linear-gradient(to right,#faeef2,#f1f3fb);
   padding: 3rem 2rem;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 @media only screen and (min-width:576px) {
@@ -8060,7 +8060,7 @@ input.quickview__value--number {
 
 .search__filter--inner.style5 {
   background: -webkit-gradient(linear,left top,right top,from(#fbd4df),to(#dee3f9));
-  background: linear-gradient(to right,#fbd4df,#dee3f9);
+  background: linear-gradient(to right,#9ce198,#1c3120);
 }
 
 .accordion__items.active {
