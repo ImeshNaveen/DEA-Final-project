@@ -18,21 +18,21 @@
                         <nav class="header__menu--navigation">
                             <ul class="header__menu--wrapper d-flex">
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link active" href="index.jsp">Home
+                                    <a class="header__menu--link active" href="index.jsp" id="custom_color">Home
                                     </a>
                                     
                                 </li>
                                 <li class="header__menu--items mega__menu--items">
-                                    <a class="header__menu--link" href="shop.jsp">Shop
+                                    <a class="header__menu--link" href="shop.jsp" id="custom_color">Shop
                                     </a>
                                     
                                 </li>
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="shop.jsp">Accesories </a>  
+                                    <a class="header__menu--link" href="shop.jsp" id="custom_color">Accesories </a>  
                                 </li>
                                 
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="contact.jsp">Contact </a>  
+                                    <a class="header__menu--link" href="contact.jsp" id="custom_color">Contact </a>  
                                 </li>
                             </ul>
                         </nav>
@@ -40,25 +40,25 @@
                     <div class="header__account">
                         <ul class="header__account--wrapper d-flex align-items-center">
                             <li class="header__account--items  header__account--search__items d-sm-2-none">
-                                <a class="header__account--btn search__open--btn" href="javascript:void(0)" data-offcanvas>
+                                <a class="header__account--btn search__open--btn" href="javascript:void(0)" data-offcanvas id="custom_color">
                                     <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="20.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
                                     <span class="visually-hidden">Search</span>  
                                 </a>
                             </li>
                             <li class="header__account--items d-none d-lg-block">
-                                <a class="header__account--btn" href="cms/index.jsp">
+                                <a class="header__account--btn" href="cms/index.jsp" id="custom_color">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                     <span class="visually-hidden">My account</span> 
                                 </a>
                             </li>
                             <li class="header__account--items d-none d-lg-block">
-                                <a class="header__account--btn" href="wishlist.jsp">
+                                <a class="header__account--btn" href="wishlist.jsp" id="custom_color">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                                     <span class="items__count">3</span> 
                                 </a>
                             </li>
                             <li class="header__account--items header__minicart--items">
-                                <a class="header__account--btn minicart__open--btn" href="javascript:void(0)" data-offcanvas>
+                                <a class="header__account--btn minicart__open--btn" href="javascript:void(0)" data-offcanvas id="custom_color">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22.706" height="22.534" viewBox="0 0 14.706 13.534">
                                         <g  transform="translate(0 0)">
                                           <g >
