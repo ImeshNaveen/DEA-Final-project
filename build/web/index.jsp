@@ -70,7 +70,6 @@
     <!-- Start header area -->
     <jsp:include page="includings/nav-bar.jsp"/>
     <!-- End header area -->
-
     <main class="main__content_wrapper">
         <!-- Start slider section -->
         <section class="hero__slider--section">
