@@ -1,37 +1,3 @@
-<<<<<<< HEAD
-    <header class="header__section">
-        <div class="header__topbar bg__primary">
-            
-        </div>
-        <div class="main__header header__sticky" style="background:black;">
-            <div class="container-fluid">
-                <div class="main__header--inner position__relative d-flex justify-content-between align-items-center">
-                    <div class="offcanvas__header--menu__open ">
-                        <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
-                            <span class="visually-hidden">Offcanvas Menu Open</span>
-                        </a>
-                    </div>
-                    <div class="main__logo">
-                        <h1 class="main__logo--title"><a class="main__logo--link" href="index.jsp"><img class="main__logo--img" src="assets/img/logo/nav-log.webp" alt="logo-img"></a></h1>
-                    </div>
-                    <div class="header__menu style3 d-none d-lg-block">
-                        <nav class="header__menu--navigation">
-                            <ul class="header__menu--wrapper d-flex">
-                                <li class="header__menu--items">
-                                    <a class="header__menu--link active" href="index.jsp">Home
-                                    </a>
-                                    
-                                </li>
-                                <li class="header__menu--items mega__menu--items">
-                                    <a class="header__menu--link" href="shop.jsp">Shop
-                                    </a>
-                                    
-                                </li>
-                                <li class="header__menu--items">
-                                    <a class="header__menu--link" href="shop.jsp">Accesories </a>  
-                                </li>
-=======
 <header class="header__section">
     <div class="header__topbar bg__primary">
         
@@ -54,7 +20,6 @@
                             <li class="header__menu--items">
                                 <a class="header__menu--link active" href="index.jsp" id="custom_color">Home
                                 </a>
->>>>>>> 4718d2d06edc8344111e35dfdb0c6d499515037f
                                 
                             </li>
                             <li class="header__menu--items mega__menu--items">
