@@ -39,27 +39,11 @@
 
     <main class="main__content_wrapper">
 
-        <!-- Start breadcrumb section -->
-        <section class="breadcrumb__section breadcrumb__bg">
-            <div class="container">
-                <div class="row row-cols-1">
-                    <div class="col">
-                        <div class="breadcrumb__content text-center">
-                            <ul class="breadcrumb__content--menu d-flex justify-content-center">
-                                <li class="breadcrumb__content--menu__items"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb__content--menu__items"><span>My Account</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End breadcrumb section -->
-        
+
         <!-- my account section start -->
         <section class="my__account--section section--padding">
             <div class="container">
-                <p class="account__welcome--text">Hello, Admin welcome to your dashboard!</p>
+                <br><br>
                 <div class="my__account--section__inner border-radius-10 d-flex">
                     <div class="account__left--sidebar">
                         <h2 class="account__content--title mb-20">My Profile</h2>
@@ -70,7 +54,7 @@
                         </ul>
                     </div>
                     
-                    <jsp:include page="contents/admin-dashboard.jsp"/>
+                    <jsp:include page="contents/dashboard.jsp"/>
                     
                     
                     <!-- this area for contents -->
