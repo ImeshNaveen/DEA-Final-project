@@ -1486,7 +1486,7 @@ body.overlay__active::before {
   transition: var(--transition);
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  background-color: var(--body-background-color);
+  background-color:#000;
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,.15);
   box-shadow: 0 0 10px rgba(0,0,0,.15);
   opacity: 0;
@@ -1732,7 +1732,7 @@ body.overlay__active::before {
 .offcanvas__stikcy--toolbar {
   position: fixed;
   bottom: 0;
-  background: var(--body-background-color);
+  background:#000;
   left: 0;
   right: 0;
   z-index: 99;
