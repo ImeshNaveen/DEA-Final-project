@@ -24,12 +24,8 @@
                                             <input class="account__login--input" placeholder="Confirm Password" type="password">
                                         </label>
                                         <button class="account__login--btn primary__btn mb-10" name="buttonClicked" value="register" type="submit">Submit & Register</button>
-                                        <%-- <div class="account__login--remember position__relative">
-                                            <input class="checkout__checkbox--input" id="check2" type="checkbox">
-                                            <span class="checkout__checkbox--checkmark"></span>
-                                            <label class="checkout__checkbox--label login__remember--label" for="check2">
-                                                I have read and agree to the terms & conditions</label>
-                                        </div> --%>
+                                        <p class="account__login--header__desc">Already have an account? <a href="login.jsp?page=login">Log now</a></p>
+                                        
                                     </div>
                                 </div>
                             </div>

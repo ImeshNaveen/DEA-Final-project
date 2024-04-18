@@ -1,47 +1,24 @@
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.io.PrintWriter;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = {"/login"})
+@WebServlet("/login")
 public class login extends HttpServlet {
-
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession(false); // Don't create a new session if it doesn't exist
+        
+        session.removeAttribute("user");
+        
+        if (session != null && session.getAttribute("user") != null) {
+            // User is already logged in, redirect to profile page
+            response.sendRedirect("cms/admin-dashboard.jsp");
+        } else {
+            // User is not logged in, stay on the login page
+            response.sendRedirect("login.jsp?page=login&error=1");
         }
     }
-    
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        
-        String buttonClicked = request.getParameter("buttonClicked");
-        
-        if("login".equals(buttonClicked)){
-            out.println("Login!");
-        }if("register".equals(buttonClicked)){
-            out.println("Registered!");
-        }
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
-    }
-
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
-
 }

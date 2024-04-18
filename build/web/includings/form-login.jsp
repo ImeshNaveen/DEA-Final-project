@@ -27,7 +27,7 @@
                                             <button class="account__login--forgot"  type="submit">Forgot Your Password?</button>
                                         </div>
                                         <button class="account__login--btn primary__btn" name="buttonClicked" value="login" type="submit">Login</button>
-                                        
+                                        <p class="account__login--header__desc">If you have not registered yet <a href="login.jsp?page=register">Register now</a></p>
                                     </div>
                                 </div>
                             </div>

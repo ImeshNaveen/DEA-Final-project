@@ -36,6 +36,36 @@
 
     <main class="main__content_wrapper">
         
+        <%
+        // Get parameter value by name
+        String pageToLoad = request.getParameter("page");
+        String err = request.getParameter("error");
+            if(err != null){
+                if(err.equals("1")){
+        %>
+                    <div class="alert alert-warning">
+                        <strong>Warning!</strong> Please log before you enter your profile
+                    </div>
+        <%
+                }
+            }
+        
+        %>
+        <%
+        
+        // Check if parameter is not null and not empty
+        if ("login".equals(pageToLoad)) {
+        %>
+            <jsp:include page="includings/form-login.jsp" />
+        <%
+            }
+            if("register".equals(pageToLoad)){
+        %>
+            <jsp:include page="includings/form-register.jsp" />
+        <%
+            }
+    %>
+        
         <jsp:include page="includings/form-login.jsp" />
         
         <!-- Start breadcrumb section -->
