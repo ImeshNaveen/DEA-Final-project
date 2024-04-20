@@ -13113,7 +13113,7 @@ details>summary::-webkit-details-marker {
 
 .admin-search-bar {
   background: -webkit-gradient(linear, left top, right top, from(#faeef2), to(#f1f3fb));
-  background: linear-gradient(to right, #faeef2, #f1f3fb);
+  background: linear-gradient(to right, #9ce198, #1c3120);
   padding: 3rem 2rem;
   border-radius: 8px;
   margin-top:10px;
@@ -13215,5 +13215,32 @@ details>summary::-webkit-details-marker {
     padding: 0 3.4rem 0 1.7rem;
 }
 
+.profile-photo img {
+  border: solid 1px #ccc; 
+  border-color:black;
+}
 
+.profile-container {
+  display: flex;
+  align-items: center; /* Vertically align content */
+}
+
+.profile-photo {
+  margin-right: 20px; /* Optional spacing between image and details */
+}
+
+.profile-details {
+  /* Style your profile name and details here */
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    /* Add further styles for smaller screens if needed */
+  }
+}
 

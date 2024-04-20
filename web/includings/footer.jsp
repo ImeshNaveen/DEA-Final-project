@@ -1,21 +1,5 @@
 <footer class="footer__section footer__bg">
         <div class="container">
-            <div class="newsletter__area">
-                <div class="newsletter__inner d-flex justify-content-between align-items-center">
-                    <div class="newsletter__content">
-                        <h2 class="newsletter__title">Subscribe <span class="text__secondary">Newsletter</span></h2>
-                        <p class="newsletter__desc">Don’t wait make a smart & logical quote here. Its pretty easy.</p>
-                    </div>
-                    <div class="newsletter__subscribe">
-                        <form class="newsletter__subscribe--form" action="#">
-                            <label>
-                                <input class="newsletter__subscribe--input" placeholder=" Enter Your Email" type="text">
-                            </label>
-                            <button class="newsletter__subscribe--button" type="submit">Subscribe Now</button>
-                        </form>   
-                    </div> 
-                </div>
-            </div>
             <div class="main__footer">
                 <div class="row ">
                     <div class="col-lg-4 col-md-10">
@@ -126,9 +110,7 @@
                         <a class="footer__logo--link" href="index.html"><img src="assets/img/logo/nav-log-light.webp" alt="logo-img"></a>
                     </div>
                     <p class="copyright__content"><span class="text__secondary">© 2022</span> Powered by <a class="copyright__content--link" target="_blank" href="https://themeforest.net/search/hooktheme">Hooktheme</a> .  All Rights Reserved.</p>
-                    <div class="footer__payment">
-                        <img src="assets/img/icon/payment-img.webp" alt="payment-img">
-                    </div>
+                    
                 </div>
             </div>
         </div>

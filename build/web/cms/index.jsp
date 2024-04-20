@@ -48,14 +48,48 @@
                     <div class="account__left--sidebar">
                         <h2 class="account__content--title mb-20">My Profile</h2>
                         <ul class="account__menu">
-                            <li class="account__menu--list"><a href="#">Dashboard</a></li>
-                            <li class="account__menu--list"><a href="#">My Oders</a></li>
-                            <li class="account__menu--list"><a href="#">Profile</a></li>
+                            <li class="account__menu--list"><a href="?page=dashboard">Dashboard</a></li>
+                            <li class="account__menu--list"><a href="?page=oders">My Oders</a></li>
+                            <li class="account__menu--list"><a href="?page=add-items">Add Items</a></li>
+                            <li class="account__menu--list"><a href="?page=profile">Profile</a></li>
                         </ul>
                     </div>
-                    
-                    <jsp:include page="contents/profile.jsp"/>
-                    
+                    <% 
+                        String loadpage = request.getParameter("page");
+                        
+                        if(loadpage == null){
+                            %>
+                            <jsp:include page="contents/dashboard.jsp"/>
+                            <%
+                        }
+                        if ("dashboard".equals(loadpage)){
+                        %> 
+                        <jsp:include page="contents/dashboard.jsp"/>
+                        <%
+                        }
+                        
+                        if ("oders".equals(loadpage)){
+                        %>
+                            <jsp:include page="contents/my-oders.jsp"/>
+                        <%
+                            }
+                         
+                        if ("profile".equals(loadpage)){
+                        %>
+                        
+                            <jsp:include page="contents/profile.jsp"/>
+                        <%
+                           }
+                        
+                        
+                        if ("add-items".equals(loadpage)){
+                        %>
+                        
+                            <jsp:include page="contents/add-item.jsp"/>
+                        <%
+                           }
+                        
+                    %>
                     
                     <!-- this area for contents -->
                     
