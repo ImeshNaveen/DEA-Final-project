@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-
-<!-- Mirrored from risingtheme.com/html/demo-partsix/partsix/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 17:34:29 GMT -->
 <head>
   <meta charset="utf-8">
   <title>Partsix - Auto Parts & Car Accessories Shop HTML Template</title>
