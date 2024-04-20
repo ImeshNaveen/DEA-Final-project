@@ -12,27 +12,27 @@
                     </a>
                 </div>
                 <div class="main__logo">
-                    <h1 class="main__logo--title"><a class="main__logo--link" href="index.jsp"><img class="main__logo--img" src="assets/img/logo/nav-log.webp" alt="logo-img"></a></h1>
+                    <h1 class="main__logo--title"><a class="main__logo--link" href="../index.jsp"><img class="main__logo--img" src="assets/img/logo/nav-log.webp" alt="logo-img"></a></h1>
                 </div>
                 <div class="header__menu style3 d-none d-lg-block">
                     <nav class="header__menu--navigation">
                         <ul class="header__menu--wrapper d-flex">
                             <li class="header__menu--items">
-                                <a class="header__menu--link active" href="index.jsp" id="custom_color">Home
+                                <a class="header__menu--link active" href="../index.jsp" id="custom_color">Home
                                 </a>
                                 
                             </li>
                             <li class="header__menu--items mega__menu--items">
-                                <a class="header__menu--link" href="shop.jsp" id="custom_color">Shop
+                                <a class="header__menu--link" href="../shop.jsp" id="custom_color">Shop
                                 </a>
                                 
                             </li>
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="shop.jsp" id="custom_color">Accesories </a>  
+                                <a class="header__menu--link" href="../shop.jsp" id="custom_color">Accesories </a>  
                             </li>
                             
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="contact.jsp" id="custom_color">Contact </a>  
+                                <a class="header__menu--link" href="../contact.jsp" id="custom_color">Contact </a>  
                             </li>
                         </ul>
                     </nav>
@@ -46,7 +46,7 @@
                             </a>
                         </li>
                         <li class="header__account--items d-none d-lg-block">
-                            <a class="header__account--btn" href="cms/index.jsp" id="custom_color">
+                            <a class="header__account--btn" href="index.jsp" id="custom_color">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                 <span class="visually-hidden">My account</span> 
                             </a>
@@ -88,14 +88,14 @@
             <nav class="offcanvas__menu">
                 <ul class="offcanvas__menu_ul">
                     <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="index.jsp" id="custom_color">Home</a>
+                        <a class="offcanvas__menu_item" href="../index.jsp" id="custom_color">Home</a>
                        
                     </li>
                     <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="shop.jsp" id="custom_color">Shop</a>
+                        <a class="offcanvas__menu_item" href="../shop.jsp" id="custom_color">Shop</a>
                         
                     </li>
-                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="contact.jsp" id="custom_color">Contact</a></li>
+                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="../contact.jsp" id="custom_color">Contact</a></li>
                 </ul>
                 <div class="offcanvas__account--items">
                     <a class="offcanvas__account--items__btn d-flex align-items-center" href="login.jsp">
@@ -148,7 +148,7 @@
     <div class="offcanvas__stikcy--toolbar" >
         <ul class="d-flex justify-content-between">
             <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="index.jsp">
+                <a class="offcanvas__stikcy--toolbar__btn" href="../index.jsp">
                 <span class="offcanvas__stikcy--toolbar__icon" id="custom_color"> 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="21.51" height="21.443" viewBox="0 0 22 17"><path fill="currentColor" d="M20.9141 7.93359c.1406.11719.2109.26953.2109.45703 0 .14063-.0469.25782-.1406.35157l-.3516.42187c-.1172.14063-.2578.21094-.4219.21094-.1406 0-.2578-.04688-.3515-.14062l-.9844-.77344V15c0 .3047-.1172.5625-.3516.7734-.2109.2344-.4687.3516-.7734.3516h-4.5c-.3047 0-.5742-.1172-.8086-.3516-.2109-.2109-.3164-.4687-.3164-.7734v-3.6562h-2.25V15c0 .3047-.11719.5625-.35156.7734-.21094.2344-.46875.3516-.77344.3516h-4.5c-.30469 0-.57422-.1172-.80859-.3516-.21094-.2109-.31641-.4687-.31641-.7734V8.46094l-.94922.77344c-.11719.09374-.24609.14062-.38672.14062-.16406 0-.30468-.07031-.42187-.21094l-.35157-.42187C.921875 8.625.875 8.50781.875 8.39062c0-.1875.070312-.33984.21094-.45703L9.73438.832031C10.1094.527344 10.5312.375 11 .375s.8906.152344 1.2656.457031l8.6485 7.101559zm-3.7266 6.50391V7.05469L11 1.99219l-6.1875 5.0625v7.38281h3.375v-3.6563c0-.3046.10547-.5624.31641-.7734.23437-.23436.5039-.35155.80859-.35155h3.375c.3047 0 .5625.11719.7734.35155.2344.211.3516.4688.3516.7734v3.6563h3.375z"></path></svg>
                     </span>
@@ -156,7 +156,7 @@
                 </a>
             </li>
             <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="shop.jsp">
+                <a class="offcanvas__stikcy--toolbar__btn" href="../shop.jsp">
                 <span class="offcanvas__stikcy--toolbar__icon" id="custom_color"> 
                     <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="18.51" height="17.443" viewBox="0 0 448 512"><path d="M416 32H32A32 32 0 0 0 0 64v384a32 32 0 0 0 32 32h384a32 32 0 0 0 32-32V64a32 32 0 0 0-32-32zm-16 48v152H248V80zm-200 0v152H48V80zM48 432V280h152v152zm200 0V280h152v152z"></path></svg>
                     </span>
