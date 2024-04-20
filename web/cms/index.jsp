@@ -49,7 +49,7 @@
                         <h2 class="account__content--title mb-20">My Profile</h2>
                         <ul class="account__menu">
                             <li class="account__menu--list"><a href="#">Dashboard</a></li>
-                            <li class="account__menu--list"><a href="#">My Oders</a></li>
+                            <li class="account__menu--list"><a href="#">My Orders</a></li>
                             <li class="account__menu--list"><a href="#">Profile</a></li>
                         </ul>
                     </div>

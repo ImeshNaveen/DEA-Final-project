@@ -18,6 +18,12 @@
                                             <input class="account__login--input" placeholder="Email Addres" type="email">
                                         </label>
                                         <label>
+                                            <input class="account__login--input" placeholder="Telephone" type="telephone">
+                                        </label>
+                                        <label>
+                                            <textarea rows="25" cols="30" class="account__login--input" placeholder="Address"></textarea>
+                                        </label>
+                                        <label>
                                             <input class="account__login--input" placeholder="Password" type="password">
                                         </label>
                                         <label>

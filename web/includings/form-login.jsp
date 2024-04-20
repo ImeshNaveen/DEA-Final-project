@@ -7,8 +7,8 @@
                             <div class="col">
                                 <div class="account__login">
                                     <div class="account__login--header mb-25">
-                                        <h2 class="account__login--header__title mb-10">Login</h2>
-                                        <p class="account__login--header__desc">Login if you area a returning customer.</p>
+                                        <h2 class="account__login--header__title mb-10">Login your Account</h2>
+                                        <p class="account__login--header__desc">Login if you already registered user.</p>
                                     </div>
                                     <div class="account__login--inner">
                                         <label>

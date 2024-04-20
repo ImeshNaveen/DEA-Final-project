@@ -44,14 +44,11 @@
                 if(err.equals("1")){
         %>
                     <div class="alert alert-warning">
-                        <strong>Warning!</strong> Please log before you enter your profile
+                        <strong>    Alert!</strong> Please log before you enter your profile
                     </div>
         <%
                 }
             }
-        
-        %>
-        <%
         
         // Check if parameter is not null and not empty
         if ("login".equals(pageToLoad)) {
@@ -65,9 +62,6 @@
         <%
             }
     %>
-        
-        <jsp:include page="includings/form-login.jsp" />
-        
         <!-- Start breadcrumb section -->
         <section class="breadcrumb__section breadcrumb__bg">
             <div class="container">
@@ -75,8 +69,8 @@
                     <div class="col">
                         <div class="breadcrumb__content text-center">
                             <ul class="breadcrumb__content--menu d-flex justify-content-center">
-                                <li class="breadcrumb__content--menu__items"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb__content--menu__items"><span>Account</span></li>
+                                <li class="breadcrumb__content--menu__items"><a href="index.jsp">Home</a></li>
+                                <li class="breadcrumb__content--menu__items"><span>Login or Register</span></li>
                             </ul>
                         </div>
                     </div>
@@ -88,48 +82,7 @@
 
 
         <!-- Start shipping section -->
-        <section class="shipping__section">
-            <div class="container">
-                <div class="shipping__inner style2 d-flex">
-                    <div class="shipping__items style2 d-flex align-items-center">
-                        <div class="shipping__icon">  
-                            <img src="assets/img/other/shipping1.webp" alt="icon-img">
-                        </div>
-                        <div class="shipping__content">
-                            <h2 class="shipping__content--title h3">Free Shipping</h2>
-                            <p class="shipping__content--desc">Free shipping over $100</p>
-                        </div>
-                    </div>
-                    <div class="shipping__items style2 d-flex align-items-center">
-                        <div class="shipping__icon">  
-                            <img src="assets/img/other/shipping2.webp" alt="icon-img">
-                        </div>
-                        <div class="shipping__content">
-                            <h2 class="shipping__content--title h3">Support 24/7</h2>
-                            <p class="shipping__content--desc">Contact us 24 hours a day</p>
-                        </div>
-                    </div>
-                    <div class="shipping__items style2 d-flex align-items-center">
-                        <div class="shipping__icon">  
-                            <img src="assets/img/other/shipping3.webp" alt="icon-img">
-                        </div>
-                        <div class="shipping__content">
-                            <h2 class="shipping__content--title h3">100% Money Back</h2>
-                            <p class="shipping__content--desc">You have 30 days to Return</p>
-                        </div>
-                    </div>
-                    <div class="shipping__items style2 d-flex align-items-center">
-                        <div class="shipping__icon">  
-                            <img src="assets/img/other/shipping4.webp" alt="icon-img">
-                        </div>
-                        <div class="shipping__content">
-                            <h2 class="shipping__content--title h3">Payment Secure</h2>
-                            <p class="shipping__content--desc">We ensure secure payment</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <jsp:include page="includings/shipping-section.jsp" />
         <!-- End shipping section -->
 
     </main>
