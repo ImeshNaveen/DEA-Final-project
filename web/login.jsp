@@ -44,7 +44,14 @@
                 if(err.equals("1")){
         %>
                     <div class="alert alert-warning">
-                        <strong>    Alert!</strong> Please log before you enter your profile
+                        <strong>    Alert!</strong> Please log before you enter your profile.
+                    </div>
+        <%
+                }
+                if(err.equals("2")){
+        %>
+                    <div class="alert alert-warning">
+                        <strong>    Alert!</strong> Passwords does not match.
                     </div>
         <%
                 }
