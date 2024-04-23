@@ -39,19 +39,33 @@
         <%
         // Get parameter value by name
         String pageToLoad = request.getParameter("page");
-        String err = request.getParameter("error");
-            if(err != null){
-                if(err.equals("1")){
+        String status = request.getParameter("status");
+            if(status != null){
+                if(status.equals("1")){
         %>
                     <div class="alert alert-warning">
                         <strong>    Alert!</strong> Please log before you enter your profile.
                     </div>
         <%
                 }
-                if(err.equals("2")){
+                if(status.equals("2")){
         %>
                     <div class="alert alert-warning">
                         <strong>    Alert!</strong> Passwords does not match.
+                    </div>
+        <%
+                }
+                if(status.equals("3")){
+        %>
+                    <div class="alert alert-success">
+                        <strong>    Success!</strong> Your account created successfully!
+                    </div>
+        <%
+                }
+                if(status.equals("4")){
+        %>
+                    <div class="alert alert-warning">
+                        <strong>    Alert!</strong> User is not inserted!.
                     </div>
         <%
                 }
