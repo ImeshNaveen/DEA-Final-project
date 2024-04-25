@@ -18,7 +18,7 @@ public class login extends HttpServlet {
             response.sendRedirect("cms/admin-dashboard.jsp");
         } else {
             // User is not logged in, stay on the login page
-            response.sendRedirect("login.jsp?page=login&error=1");
+            response.sendRedirect("login.jsp?page=login&status=1");
         }
     }
 }

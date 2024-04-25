@@ -52,10 +52,14 @@ body {
   visibility: visible;
   overflow-x: hidden;
   color: var(--foreground-color);
-  
+  background-color: var(--background-color);
 }
 
-
+@media only screen and (min-width:992px){
+    body{
+        color:white;
+    }
+}
 
 
 @media only screen and (max-width:991px) {
@@ -834,6 +838,7 @@ select {
   .section__heading.style2 .section__heading--maintitle {
     font-size: 2.6rem;
     line-height: 3.5rem;
+    color: white;
   }
 }
 
@@ -841,6 +846,7 @@ select {
   .section__heading.style2 .section__heading--maintitle {
     font-size: 2rem;
     line-height: 2.6rem;
+    color: white;
   }
 }
 
@@ -4373,6 +4379,10 @@ input[type=number]::-webkit-outer-spin-button {
   .hero__content--style5 {
     top: 22%;
   }
+}
+
+.header_text{
+    color: white;
 }
 
 @media only screen and (max-width:767px) {
