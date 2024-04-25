@@ -77,7 +77,7 @@
         <div class="offcanvas__inner">
             <div class="offcanvas__logo">
                 <a class="offcanvas__logo_link" href="index.jsp">
-                    <img src="assets/img/logo/nav-log.webp" alt="Grocee Logo" width="158" height="36">
+                    <img src="assets/img/logo/main_logo.png" alt="Grocee Logo" width="158" height="36">
                 </a>
                 <button class="offcanvas__close--btn" data-offcanvas id="custom_color">close</button>
             </div>
