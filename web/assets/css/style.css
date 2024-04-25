@@ -55,10 +55,15 @@ body {
   background-color: var(--background-color);
 }
 
+
+
 @media only screen and (min-width:992px){
     body{
         color:white;
     }
+    .hero__content h2 under-word{
+    color:"#02B91A";
+}
 }
 
 
