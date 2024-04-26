@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Partsix - Auto Parts & Car Accessories Shop HTML Template</title>
+  <title>Digital Panchikawattha</title>
   <meta name="description" content="Morden Bootstrap HTML5 Template">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
