@@ -76,13 +76,18 @@
         %>
             <jsp:include page="includings/form-login.jsp" />
         <%
-            }
-            if("register".equals(pageToLoad)){
+        }
+        if("register".equals(pageToLoad)){
         %>
             <jsp:include page="includings/form-register.jsp" />
         <%
-            }
-    %>
+        }
+        if(pageToLoad == null){
+        %>
+            <jsp:include page="includings/form-login.jsp" />
+        <%
+        }    
+        %>
         <!-- Start breadcrumb section -->
         <section class="breadcrumb__section breadcrumb__bg">
             <div class="container">
