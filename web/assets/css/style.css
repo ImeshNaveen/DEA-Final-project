@@ -58,14 +58,19 @@ body {
 
 
 @media only screen and (min-width:992px){
-    body{
-        color:white;
-    }
-    .hero__content h2 under-word{
-    color:"#02B91A";
+
+.hero__content--style5{
+    color:white;
+}
+
+.section__heading--desc{
+    color:#cfcccc;
 }
 }
 
+.under-word{
+   color:#02B91A; 
+}
 
 @media only screen and (max-width:991px) {
   body {
@@ -843,7 +848,7 @@ select {
   .section__heading.style2 .section__heading--maintitle {
     font-size: 2.6rem;
     line-height: 3.5rem;
-    color: white;
+    color: #cfcccc;
   }
 }
 
@@ -851,7 +856,7 @@ select {
   .section__heading.style2 .section__heading--maintitle {
     font-size: 2rem;
     line-height: 2.6rem;
-    color: white;
+    color: black;
   }
 }
 
