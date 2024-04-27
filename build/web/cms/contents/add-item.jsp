@@ -5,7 +5,7 @@
         <div class="login-container">
         <div class="login-box">
             
-            <form action="" method="POST" >
+            <form action="new" method="POST" >
                 <h1>Add Items</h1><br>
             <div class="user-box">
                 <input type="text" vlaue="" name="name" required>
@@ -50,7 +50,7 @@
             <br>
             <div class="user-box">
                 <input type="text" id="ides" name="ides" required>
-                <label for="itemdescription">Item Description:</label>
+                <label for="itemdescription" style="color:black;">Item Description:</label>
             </div>
             <br>
             
@@ -69,13 +69,13 @@
             <br><br>
             <div class="user-box">
                 <input type="number" id="price" name="price" min="0" step="0.01" required>
-                <label for="price">Price:</label>
+                <label for="price" style="color:black;">Price:</label>
             </div>
-            <center>
+            <div class="form-btn">
                 <input type="submit" value="Submit" class="submit">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               
                 <input type="reset" value="reset" class="reset">  
-            </center>
+            </div>
             </form>
         </div>
     </div>
