@@ -13247,10 +13247,10 @@ details>summary::-webkit-details-marker {
 
 
 label{
-  color: #fff;
+  color: #000;
 }
 h1{
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 form{
@@ -13268,9 +13268,9 @@ form{
 .login-box {
   width: 600px;
   padding: 40px;
-  background: rgba(24, 20, 20, 0.987);
+  background: rgba(210, 252, 204, 0.71);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+ 
   border-radius: 0px;
 }
 
@@ -13283,7 +13283,7 @@ form{
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   margin-bottom: 30px;
   border: none;
   border-bottom: 1px solid #03f40f;
@@ -13310,9 +13310,11 @@ form{
   font-size: 12px;
 }
 
-.login-box form .submit {
+.login-box form .submit,
+.login-box form .reset
+{
   position: relative;
-  display: inline-block;
+  display: flex;
   padding: 10px 20px;
   color: #000000;
   font-size: 16px;
@@ -13324,19 +13326,6 @@ form{
   letter-spacing: 4px
 }
 
-.login-box form .reset {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  color: #000000;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: .5s;
-  margin-top: 40px;
-  letter-spacing: 4px
-}
 
 .login-box .submit:hover {
   background: #03f40f;
@@ -13361,7 +13350,7 @@ form{
  /* css for radio buttons */
 
 .radio-input{
-  color: #fff;
+  color: #000;
   }
 .radio {
   -webkit-appearance: none;
@@ -13420,7 +13409,7 @@ select {
   flex: 1;
   padding: 0 1em;
   color: #fff;
-  background-color: var(--darkgray);
+  background-color : var(--darkgray);
   background-image: none;
   cursor: pointer;
 }
@@ -13530,5 +13519,13 @@ select::-ms-expand {
 
 .custum-file-upload input {
   display: none;
+}
+
+
+
+.form-btn {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 75px; /* Space between buttons */
 }
 
