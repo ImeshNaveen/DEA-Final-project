@@ -8,6 +8,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class UserServlet extends HttpServlet {
+        
+    public void doPost(HttpServletRequest req, HttpServletResponse res) 
+                throws IOException, ServletException{
+        
+        PrintWriter out = res.getWriter();
+        
+        //String action = req.get
+        
+    
+    }
+        
 
+//    public void doPost(HttpServletRequest req, HttpServletResponse res) 
+//            throws IOException, ServletException{
+//            this.doGet(req, res);
+//    }
     
 }
