@@ -13,8 +13,13 @@
         <servlet-class>controller.UserServlet</servlet-class>
     </servlet>
     <servlet>
+<<<<<<< Updated upstream
         <servlet-name>productServlet</servlet-name>
         <servlet-class>productPackege.productServlet</servlet-class>
+=======
+        <servlet-name>userServlet</servlet-name>
+        <servlet-class>userPackage.userServlet</servlet-class>
+>>>>>>> Stashed changes
     </servlet>
     <servlet-mapping>
         <servlet-name>login</servlet-name>
@@ -29,8 +34,13 @@
         <url-pattern>/UserServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+<<<<<<< Updated upstream
         <servlet-name>productServlet</servlet-name>
         <url-pattern>/productServlet</url-pattern>
+=======
+        <servlet-name>userServlet</servlet-name>
+        <url-pattern>/userServlet/*</url-pattern>
+>>>>>>> Stashed changes
     </servlet-mapping>
     <session-config>
         <session-timeout>

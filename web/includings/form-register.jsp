@@ -1,7 +1,7 @@
         <!-- Start register section  -->
         <div class="login__section section--padding">
             <div class="container">
-                <form action="registerServlet" method="post">
+                <form action="userServlet/register" method="post">
                     <div class="login__section--inner">
                         <div class="row row-cols-md-2 row-cols-1">
                             <div class="col">

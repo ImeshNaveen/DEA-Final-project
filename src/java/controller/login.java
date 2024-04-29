@@ -9,9 +9,7 @@ import java.io.IOException;
 public class login extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false); // Don't create a new session if it doesn't exist
-        
-        session.removeAttribute("user");
-        
+    
         if (session != null && session.getAttribute("user") != null) {
             // User is already logged in, redirect to profile page
             response.sendRedirect("cms/admin-dashboard.jsp");
