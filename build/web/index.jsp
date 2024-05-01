@@ -113,10 +113,19 @@
                     <h2 class="section__heading--maintitle">Shop by <span>Categories</span></h2>
                 </div>
                 <div class="categories__inner--style3 d-flex">
+<<<<<<< Updated upstream
                     <div class="categories__card--style3 text-center">
                         <a class="categories__card--link" href="shop.html">
                             <div class="categories__thumbnail">
                                 <img class="categories__thumbnail--img" src="assets/img/categories/categories-product1.webp" alt="categories-img">
+=======
+                    
+                    <c:forEach var="onecategory" items="${allCategories}">
+                        <div class="categories__card--style3 text-center">
+                        <a class="categories__card--link" href="shop.jsp">
+                            <div class="categories__thumbnail">
+                                <img class="categories__thumbnail--img" src="<c:out value="${onecategory.image}" />" alt="categories-img">
+>>>>>>> Stashed changes
                             </div>
                             <div class="categories__content style3">
                                 <h2 class="categories__content--title">Starting</h2>
