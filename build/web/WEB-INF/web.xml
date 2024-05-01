@@ -17,12 +17,12 @@
         <servlet-class>productPackege.productServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>copy</servlet-name>
-        <servlet-class>userPackage.copy</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>userServlet</servlet-name>
         <servlet-class>userPackage.userServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>categoryServelet</servlet-name>
+        <servlet-class>categories.categoryServelet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>login</servlet-name>
@@ -41,12 +41,12 @@
         <url-pattern>/productServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>copy</servlet-name>
-        <url-pattern>/copy/*</url-pattern>
+        <servlet-name>userServlet</servlet-name>
+        <url-pattern>/userServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>userServlet</servlet-name>
-        <url-pattern>/userServlet/*</url-pattern>
+        <servlet-name>categoryServelet</servlet-name>
+        <url-pattern>/categoryServelet/*</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
