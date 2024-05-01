@@ -50,8 +50,10 @@
                         <ul class="account__menu">
                             <li class="account__menu--list"><a href="?page=dashboard">Dashboard</a></li>
                             <li class="account__menu--list"><a href="?page=oders">My Oders</a></li>
-                            <li class="account__menu--list"><a href="?page=add-items">Add Items</a></li>
                             <li class="account__menu--list"><a href="?page=profile">Profile</a></li>
+                            <li class="account__menu--list"><a href="?page=add-items">Add Items</a></li>
+                            <li class="account__menu--list"><a href="?page=add-brand">Add Brand</a></li>
+                            <li class="account__menu--list"><a href="?page=add-model">Add Model</a></li>
                         </ul>
                     </div>
                     <% 
@@ -88,7 +90,20 @@
                             <jsp:include page="contents/add-item.jsp"/>
                         <%
                            }
+
+                           if ("add-brand".equals(loadpage)){
+                        %>
                         
+                            <jsp:include page="contents/add-brand.jsp"/>
+                        <%
+                           }
+                        
+                           if ("add-model".equals(loadpage)){
+                        %>
+                        
+                            <jsp:include page="contents/add-model.jsp"/>
+                        <%
+                           }
                     %>
                     
                     <!-- this area for contents -->
