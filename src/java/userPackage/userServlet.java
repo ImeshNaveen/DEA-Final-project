@@ -1,4 +1,3 @@
-
 package userPackage;
 
 import java.io.IOException;
@@ -10,103 +9,53 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 public class userServlet extends HttpServlet {
     
+    private UserDAO useDAO;
     
-    private UserDAO userDAO;
+    private userServlet(){
+        this.useDAO = new UserDAO();
+    }
 
-    public userServlet() {
-        this.userDAO = new UserDAO();
-    }
-    
-    public void doGet(HttpServletRequest req, HttpServletResponse res) 
-            throws IOException, ServletException{
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         
-        PrintWriter out = res.getWriter();
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        String url = request.getRequestURI();
+        String[] pages = url.split("/");
         
-        String action = req.getRequestURI();
-        String[] url = action.split("/");
-        
-        out.println(action); 
-        
-        String value;
-        if(url.length > 3){
-            value = url[3];
-        }else{
-            value = "deft";
+        String page = "login";
+        if(pages.length > 2){
+            page = pages[3];
         }
         
-        switch(value){
-            case "register":
-                System.out.println("register");
-                res.sendRedirect("../register.jsp");
-                break;
+        switch(page){
             case "login":
-                System.out.println("login");
-                res.sendRedirect("../login.jsp");
+                out.println("page: login");
                 break;
-            case "dashboard":
-                System.out.println("dashboard");
-                dashboard(req, res);
-                break;
-            case "insertUser":
-                System.out.println("insertUser");
-                insertUser(req, res);
-                break;
-            case "logUser":
-                System.out.println("logUser");
-                logUser(req, res);
-                break;
-            case "update":
-                out.println("updating");
-                break;
-            case "delete":
-                out.println("Deleting");
-                break;
-            case "edit":
-                out.println("editing");
-                break;
-            default:
-                out.println("Default");
+            case "register":
+                registerUser(request, response);
                 break;
         }
     }
-    
-    public void doPost(HttpServletRequest req, HttpServletResponse res) 
-            throws IOException, ServletException{
-        this.doGet(req, res);
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        this.doGet(request, response);
     }
     
-    public void dashboard(HttpServletRequest req, HttpServletResponse res) 
-            throws IOException, ServletException{
-        
-        
-        
-        HttpSession session = req.getSession(false); // Don't create a new session if it doesn't exist
-        
-        session.removeAttribute("user");
-        
-        if (session != null && session.getAttribute("user") != null) {
-            // User is already logged in, redirect to profile page
-            res.sendRedirect("../cms/admin-dashboard.jsp");
-        } else {
-            // User is not logged in, stay on the login page
-            res.sendRedirect("../login.jsp?page=login&status=1");
-        }
-    }
-    
-    public void insertUser(HttpServletRequest req, HttpServletResponse res) 
-            throws IOException, ServletException{
-        String password = req.getParameter("pw");
-        String confirm_password = req.getParameter("cpw");
+    public void registerUser(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String password = request.getParameter("pw");
+        String confirm_password = request.getParameter("cpw");
         
         if(password.equals(confirm_password)){
-            String username = req.getParameter("username");
-            String email = req.getParameter("email");
-            String phone_no = req.getParameter("phone_no");
-            String address = req.getParameter("address");
+            String username = request.getParameter("username");
+            String email = request.getParameter("email");
+            String phone_no = request.getParameter("phone_no");
+            String address = request.getParameter("address");
             String city_id = "5";
             String image = "user.lpg";
             
@@ -114,19 +63,15 @@ public class userServlet extends HttpServlet {
                 System.out.println("Getting user Details");
                 int cityId = Integer.parseInt(city_id);
                 User newUser = new User(username,email,password,phone_no,image,address,cityId);
-                userDAO.insertUser(newUser);
-                res.sendRedirect("register.jsp");
+                useDAO.insertUser(newUser);
+                response.sendRedirect("register");
             }catch(Exception e){
                 e.printStackTrace();
             }
-        }  
+        }
         
+        
+    
     }
-    
-    public void logUser(HttpServletRequest req, HttpServletResponse res) 
-            throws IOException, ServletException{
-        this.doGet(req, res);
-    }
-    
-    
+
 }

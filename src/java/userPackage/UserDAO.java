@@ -10,13 +10,13 @@ import java.sql.SQLException;
 public class UserDAO {
     
     //db connection
-    private String url = "jdbc:mysql://localhost:3308/panchikawaththa";
-    private String dbusername = "root";
+    private String url = "jdbc:mysql://localhost:3308/Library";
+    private String username = "root";
     private String password = "";
    
     private static final String insertUser = "insert into user(username, email, password, mobile, image, address, city_id) values(?,?,?,?,?,?,?)";
-//    private static final String selectUser = "Select * from user where id = ?";
-//    private static final String selectUsers = "Select * from user";
+    private static final String selectUser = "Select * from user where id = ?";
+    private static final String selectUsers = "Select * from user";
     
     protected Connection getConnection(){
         
@@ -24,7 +24,7 @@ public class UserDAO {
         
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(url, dbusername, password);
+            connection = DriverManager.getConnection(url, username, password);
             System.out.println("Connection started!");
         }  
         catch(SQLException e){
@@ -33,7 +33,8 @@ public class UserDAO {
         catch(ClassNotFoundException e){
             e.printStackTrace();
         }
-        return connection;   
+        return connection;
+        
     }
     
     public void insertUser(User user){
