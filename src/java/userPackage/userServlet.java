@@ -4,8 +4,10 @@ package userPackage;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -35,7 +37,7 @@ public class userServlet extends HttpServlet {
         if(url.length > 3){
             value = url[3];
         }else{
-            value = "deft";
+            value = "listUser";
         }
         
         switch(value){
@@ -59,6 +61,10 @@ public class userServlet extends HttpServlet {
                 System.out.println("logUser");
                 logUser(req, res);
                 break;
+            case "listUser":
+                System.out.println("listUser");
+                userList(req, res);
+                break;
             case "update":
                 out.println("updating");
                 break;
@@ -69,8 +75,8 @@ public class userServlet extends HttpServlet {
                 out.println("editing");
                 break;
             default:
-                out.println("Default");
-                break;
+                System.out.println("listUser");
+                userList(req, res);
         }
     }
     
@@ -119,13 +125,27 @@ public class userServlet extends HttpServlet {
             }catch(Exception e){
                 e.printStackTrace();
             }
-        }  
-        
+        }    
     }
     
     public void logUser(HttpServletRequest req, HttpServletResponse res) 
             throws IOException, ServletException{
         this.doGet(req, res);
+    }
+    
+    private void userList(HttpServletRequest req, HttpServletResponse res) 
+            throws IOException, ServletException{
+        
+        try{
+            List<User> listusers = userDAO.selectUsers();
+            
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/userList.jsp");
+            req.setAttribute("listusers", listusers);
+            dispatcher.forward(req, res);
+            
+        }catch(Exception e){
+            e.printStackTrace(); 
+        }
     }
     
     

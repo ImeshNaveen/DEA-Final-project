@@ -6,6 +6,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDAO {
     
@@ -15,8 +17,8 @@ public class UserDAO {
     private String password = "";
    
     private static final String insertUser = "insert into user(username, email, password, mobile, image, address, city_id) values(?,?,?,?,?,?,?)";
-//    private static final String selectUser = "Select * from user where id = ?";
-//    private static final String selectUsers = "Select * from user";
+    private static final String selectUser = "Select * from user where id = ?";
+    private static final String selectUsers = "Select * from user";
     
     protected Connection getConnection(){
         
@@ -55,5 +57,34 @@ public class UserDAO {
         catch(Exception e){
             e.printStackTrace();
         }
+    }
+    
+    public List<User> selectUsers(){
+        List<User> users = new ArrayList<>();
+        User user = null;
+        
+        try{
+            Connection connection = getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(selectUsers);
+            
+            ResultSet userDetails = preparedStatement.executeQuery();
+            while(userDetails.next()){
+                int id = userDetails.getInt("id");
+                String user_name = userDetails.getString("username");
+                String email = userDetails.getString("email");
+                String password = userDetails.getString("password");
+                String mobile = userDetails.getString("mobile");
+                String image = userDetails.getString("image");
+                String address = userDetails.getString("address");
+                int city_id = userDetails.getInt("city_id");
+                users.add(new User(id,user_name,email,password,mobile,image,address,city_id)); 
+            }
+            connection.close();
+            System.out.println("Connection closed!");
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        return users;
     }
 }
