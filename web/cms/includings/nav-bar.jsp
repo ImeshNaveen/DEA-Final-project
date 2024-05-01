@@ -12,7 +12,7 @@
                     </a>
                 </div>
                 <div class="main__logo">
-                    <h1 class="main__logo--title"><a class="main__logo--link" href="../index.jsp"><img class="main__logo--img" src="assets/img/logo/nav-log.webp" alt="logo-img"></a></h1>
+                    <h1 class="main__logo--title"><a class="main__logo--link" href="../index.jsp"><img class="main__logo--img" src="../assets/img/logo/main_logo.png" alt="logo-img"></a></h1>
                 </div>
                 <div class="header__menu style3 d-none d-lg-block">
                     <nav class="header__menu--navigation">

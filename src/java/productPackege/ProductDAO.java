@@ -29,13 +29,15 @@ public class ProductDAO {
         
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            connection= DriverManager.getConnection(url, username, password);
-            System.out.println("Connection started");
-        }
+            connection = DriverManager.getConnection(url, username, password);
+            System.out.println("Connection started!");
+        }  
         catch(SQLException e){
+            System.out.println("SQL!");
             e.printStackTrace();
         }
         catch(ClassNotFoundException e){
+            System.out.println("Classs not foun!");
             e.printStackTrace();
         }
         return connection;

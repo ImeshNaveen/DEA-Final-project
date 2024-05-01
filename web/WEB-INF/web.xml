@@ -21,8 +21,8 @@
         <servlet-class>userPackage.userServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>additemservlet</servlet-name>
-        <servlet-class>addcms.additemservlet</servlet-class>
+        <servlet-name>categoryServelet</servlet-name>
+        <servlet-class>categories.categoryServelet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>login</servlet-name>
@@ -45,8 +45,8 @@
         <url-pattern>/userServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>additemservlet</servlet-name>
-        <url-pattern>/additemservlet</url-pattern>
+        <servlet-name>categoryServelet</servlet-name>
+        <url-pattern>/categoryServelet/*</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

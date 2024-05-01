@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class CatDAO {
   //db connection
-    private String url = "jdbc:mysql://localhost:3306/panchikawaththa?useSSL=false;";
+    private String url = "jdbc:mysql://localhost:3306/panchikawaththa";
     private String username="root";
     private String password="";
     
@@ -32,13 +32,15 @@ public class CatDAO {
         
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            connection= DriverManager.getConnection(url,username,password);
-            System.out.println("Connection started");
-        }
+            connection = DriverManager.getConnection(url, username, password);
+            System.out.println("Connection started!");
+        }  
         catch(SQLException e){
+            System.out.println("SQL!");
             e.printStackTrace();
         }
         catch(ClassNotFoundException e){
+            System.out.println("Classs not foun!");
             e.printStackTrace();
         }
         return connection;
@@ -56,7 +58,15 @@ public class CatDAO {
                int id= rs.getInt("id");
                String name=rs.getString("name");
                String image=rs.getString("image");
-               categories.add(new Category(name,image));
+               if (image != null) {
+                categories.add(new Category(id, name, image));
+               } else {
+                // Handle the case where the image path is null (optional)
+                // For example, you can set a default image path or skip adding this category
+                 categories.add(new Category(id, name, "default_image_path"));
+                // Or simply skip adding this category
+                // continue;
+               }
            }
        }catch(SQLException ex)
        {
