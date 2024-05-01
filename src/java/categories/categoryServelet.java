@@ -40,13 +40,16 @@ public class categoryServelet extends HttpServlet {
             url=urlpartns[3];
         }else
         {
-            url="default value";
+            url="default";
         }
         System.out.println(url);
         
         switch(url){
             case "new":
                 System.out.println("new route");
+                break;
+            case "default":
+                show_index(req,res);
                 break;
             default:
                 show_index(req,res);

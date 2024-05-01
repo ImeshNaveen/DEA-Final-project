@@ -1,5 +1,6 @@
 <!doctype html>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<jsp:include page="/categoryServelet"/>
 <html lang="en">
 
 <head>
@@ -33,6 +34,9 @@
     <!-- End header area -->
     
     <main class="main__content_wrapper">
+        
+<!--connect to servlet-->
+
         <!-- Start slider section -->
         <section class="hero__slider--section">
             <div class="slider__thumbnail--style5 position-relative">
@@ -117,9 +121,9 @@
                     
                     <c:forEach var="onecategory" items="${allCategories}">
                         <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.jsp">
+                        <a class="categories__card--link" href="shop.jsp?catId=<c:out value="${onecategory.id}" />">
                             <div class="categories__thumbnail">
-                                <img class="categories__thumbnail--img" src="<c:out value="${onecategory.image}" />" alt="categories-img">
+                                <img class="categories__thumbnail--img" src="assets/img/categories/<c:out value="${onecategory.image}" />" alt="categories-img">
                             </div>
                             <div class="categories__content style3">
                                 <h2 class="categories__content--title"><c:out value="${onecategory.name}" /></h2>
@@ -127,107 +131,7 @@
                             </div>
                         </a>
                     </div>
-                    </c:forEach>
-                    
-<!--                    <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
-                            <div class="categories__thumbnail">
-                                <img class="categories__thumbnail--img" src="assets/img/categories/categories-product2.webp" alt="categories-img">
-                            </div>
-                            <div class="categories__content style3">
-                                <h2 class="categories__content--title">Tires Chains</h2>
-                                <span class="categories__content--subtitle">16 Items)</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
-                            <div class="categories__thumbnail">
-                                <img class="categories__thumbnail--img" src="assets/img/categories/categories-product3.webp" alt="categories-img">
-                            </div>
-                            <div class="categories__content style3">
-                                <h2 class="categories__content--title">Caliper Covers</h2>
-                                <span class="categories__content--subtitle">(26 Items)</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
-                            <div class="categories__thumbnail">
-                                <img class="categories__thumbnail--img" src="assets/img/categories/categories-product4.webp" alt="categories-img">
-                            </div>
-                            <div class="categories__content style3">
-                                <h2 class="categories__content--title">Wheel Adapters</h2>
-                                <span class="categories__content--subtitle">(24 Items)</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
-                            <div class="categories__thumbnail">
-                                <img class="categories__thumbnail--img" src="assets/img/categories/categories-product5.webp" alt="categories-img">
-                            </div>
-                            <div class="categories__content style3">
-                                <h2 class="categories__content--title">TPMS Sensors</h2>
-                                <span class="categories__content--subtitle">(22 Items)</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
-                            <div class="categories__thumbnail">
-                                <img class="categories__thumbnail--img" src="assets/img/categories/categories-product6.webp" alt="categories-img">
-                            </div>
-                            <div class="categories__content style3">
-                                <h2 class="categories__content--title">Auto Parts</h2>
-                                <span class="categories__content--subtitle">(17 Items)</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
-                            <div class="categories__thumbnail">
-                                <img class="categories__thumbnail--img" src="assets/img/categories/categories-product7.webp" alt="categories-img">
-                            </div>
-                            <div class="categories__content style3">
-                                <h2 class="categories__content--title">Parts Box</h2>
-                                <span class="categories__content--subtitle">(25 Items)</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
-                            <div class="categories__thumbnail">
-                                <img class="categories__thumbnail--img" src="assets/img/categories/categories-product8.webp" alt="categories-img">
-                            </div>
-                            <div class="categories__content style3">
-                                <h2 class="categories__content--title">Porsche</h2>
-                                <span class="categories__content--subtitle">(18 Items)</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
-                            <div class="categories__thumbnail">
-                                <img class="categories__thumbnail--img" src="assets/img/categories/categories-product1.webp" alt="categories-img">
-                            </div>
-                            <div class="categories__content style3">
-                                <h2 class="categories__content--title">Auto Parts</h2>
-                                <span class="categories__content--subtitle">(22 Items)</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__card--style3 text-center">
-                        <a class="categories__card--link" href="shop.html">
-                            <div class="categories__thumbnail">
-                                <img class="categories__thumbnail--img" src="assets/img/categories/categories-product2.webp" alt="categories-img">
-                            </div>
-                            <div class="categories__content style3">
-                                <h2 class="categories__content--title">Motor Oil </h2>
-                                <span class="categories__content--subtitle">(24 Items)</span>
-                            </div>
-                        </a>
-                    </div>-->
+                    </c:forEach> 
                 </div>
             </div>
         </section>
