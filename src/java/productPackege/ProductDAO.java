@@ -21,7 +21,7 @@ public class ProductDAO {
     
     private static final String insertProducts="insert into products(name,brand_id,category_id,modle,itemCondition,description,image,dateTime,year,price) values(?,?,?,?,?,?,?,?,?,?)";
     private static final String selectProducts="Select * from products where id= ?";
-    private static final String selecProducts="Select * from products";
+    private static final String selectAllProducts="Select * from products";
 
     protected Connection getConnection(){
         
@@ -68,29 +68,30 @@ public class ProductDAO {
         }
     }
     
-    public Product selectProduct(int id){
+    public Product selectProduct(int select_id){
         Product product=null;
         try{
            Connection connection= getConnection(); 
             PreparedStatement preparedStatement=connection.prepareStatement(selectProducts);
-            preparedStatement.setInt(1,id);
+            preparedStatement.setInt(1,select_id);
             
             ResultSet productDetails = preparedStatement.executeQuery();
             
             while(productDetails.next()){
-             int product_id = productDetails.getInt("id");
-             String product_name = productDetails.getString("name");
+             int id = productDetails.getInt("id");
+             String name = productDetails.getString("name");
              int brand_id = productDetails.getInt("brand_id");
              int category_id = productDetails.getInt("category_id");
-             String product_modle = productDetails.getString("modle");
-             String item_condition = productDetails.getString("itemCondition");
-             String product_discription = productDetails.getString("discription");
-             String product_image = productDetails.getString("image");
-             String date_time = productDetails.getString("dateTime");
-             int product_year=productDetails.getInt("year");
-             String product_price=productDetails.getString("price");
-             product= new Product(product_id,product_name,brand_id,category_id,product_modle,item_condition,product_discription,product_image,date_time,product_year,product_price);
-             
+             String modle = productDetails.getString("modle");
+             String itemCondition = productDetails.getString("itemCondition");
+             String description = productDetails.getString("discription");
+             String image = productDetails.getString("image");
+             String dateTime = productDetails.getString("dateTime");
+             int year=productDetails.getInt("year");
+             String price=productDetails.getString("price");
+             product= new Product(id,name,brand_id,category_id,modle,itemCondition,description,image,dateTime,year,price);
+             connection.close();
+            System.out.println("Connection closed");
             }
         }
         catch(Exception e){
@@ -104,23 +105,23 @@ public class ProductDAO {
         Product product= null;
         try{
            Connection connection= getConnection(); 
-            PreparedStatement preparedStatement=connection.prepareStatement(selectProducts);
+            PreparedStatement preparedStatement=connection.prepareStatement(selectAllProducts);
             
             ResultSet productDetails = preparedStatement.executeQuery();
             
             while(productDetails.next()){
-             int product_id = productDetails.getInt("id");
-             String product_name = productDetails.getString("name");
+             int id = productDetails.getInt("id");
+             String name = productDetails.getString("name");
              int brand_id = productDetails.getInt("brand_id");
              int category_id = productDetails.getInt("category_id");
-             String product_modle = productDetails.getString("modle");
-             String item_condition = productDetails.getString("itemCondition");
-             String product_discription = productDetails.getString("discription");
-             String product_image = productDetails.getString("image");
-             String date_time = productDetails.getString("dateTime");
-             int product_year=productDetails.getInt("year");
-             String product_price=productDetails.getString("price");
-             product= new Product(product_id,product_name,brand_id,category_id,product_modle,item_condition,product_discription,product_image,date_time,product_year,product_price);
+             String modle = productDetails.getString("modle");
+             String itemCondition = productDetails.getString("itemCondition");
+             String description = productDetails.getString("discription");
+             String image = productDetails.getString("image");
+             String dateTime = productDetails.getString("dateTime");
+             int year=productDetails.getInt("year");
+             String price=productDetails.getString("price");
+             product= new Product(id,name,brand_id,category_id,modle,itemCondition,description,image,dateTime,year,price);
              
             }
         }
