@@ -19,8 +19,8 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class productServlet extends HttpServlet {
     
-    public void doGet(HttpServletRequest req,HttpServletResponse res)
-            throws IOException
+    //public void doGet(HttpServletRequest req,HttpServletResponse res)
+           // throws IOException
 
     
  
