@@ -65,6 +65,7 @@ public class productServlet extends HttpServlet {
             RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
             req.setAttribute("allProduct",allProduct);
             dispatcher.forward(req, res);
+            System.out.println("Data sent!");
         }catch(IOException | ServletException e){
             e.printStackTrace();
         }

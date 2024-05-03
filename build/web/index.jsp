@@ -1,6 +1,7 @@
 <!doctype html>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:include page="/categoryServelet"/>
+<jsp:include page="/productServlet"/>
 <html lang="en">
 
 <head>
