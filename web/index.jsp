@@ -148,6 +148,22 @@
                             <button class="tab__btn--link active" data-bs-toggle="tab" data-bs-target="#recent" type="button" role="tab" aria-selected="true"> Recent
                             </button>
                         </li>
+<!--                        <li class="tab__btn--item" role="presentation">
+                          <button class="tab__btn--link" data-bs-toggle="tab" data-bs-target="#bestseller" type="button" role="tab" aria-selected="false">
+                            Best Seller</button>
+                        </li>
+                        <li class="tab__btn--item" role="presentation">
+                          <button class="tab__btn--link" data-bs-toggle="tab" data-bs-target="#top" type="button" role="tab" aria-selected="false">
+                            Top </button>
+                        </li>
+                        <li class="tab__btn--item" role="presentation">
+                          <button class="tab__btn--link" data-bs-toggle="tab" data-bs-target="#new" type="button" role="tab" aria-selected="false">
+                            New Arrivals*</button>
+                        </li>
+                        <li class="tab__btn--item" role="presentation">
+                          <button class="tab__btn--link" data-bs-toggle="tab" data-bs-target="#rating" type="button" role="tab" aria-selected="false">
+                            top rating</button>
+                        </li>-->
                       </ul>
                 </div>
                 <div class="product__section--inner">
