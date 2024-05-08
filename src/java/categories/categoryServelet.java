@@ -59,7 +59,7 @@ public class categoryServelet extends HttpServlet {
             List<Category> allCategories = catDAO.selectallcategory();
             RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
             req.setAttribute("allCategories", allCategories);
-            dispatcher.forward(req, res);
+            dispatcher.forward(req,res);
         }catch(IOException | ServletException e){
             e.printStackTrace();
         }
