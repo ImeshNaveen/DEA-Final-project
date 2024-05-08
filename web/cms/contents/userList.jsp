@@ -1,5 +1,5 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<jsp:include page="userServlet/listUser" />
+<jsp:include page="../../userServlet/listUser" />
 
 
 <div class="account__wrapper">
@@ -31,10 +31,8 @@
                         <td><c:out value="${user.city_id}" /></td>
                         <td></td>
                     </tr>
-                </c:forEach>
-                                        
-                                    </tbody>
-                                    
+                </c:forEach>    
+                                    </tbody> 
                                 </table>
                             </div>
                         </div>

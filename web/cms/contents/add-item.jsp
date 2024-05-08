@@ -5,12 +5,23 @@
         <div class="login-container">
         <div class="login-box">
             
-            <form action="new" method="POST" >
+            <form action="../productServlet/addItem" method="POST" >
                 <h1>Add Items</h1><br>
             <div class="user-box">
-                <input type="text" vlaue="" name="name" required>
+                <input type="text" name="name" required>
                 <label for="Name">Item Name:</label>
             </div>
+                
+            <label for="brand">Category:</label>
+            <div class="select">
+                <select name="category" id="category" required>
+                    <option value="Car">Car</option>
+                    <option value="Van">Van</option>
+                    <option value="Bus">Bus</option>
+                    <option value="Jeep">Jeep</option>
+                </select>
+              </div>
+              <br>
 
             <label for="brand">Brand:</label>
             <div class="select">
@@ -49,7 +60,7 @@
             </div>
             <br>
             <div class="user-box">
-                <input type="text" id="ides" name="ides" required>
+                <input type="text" id="ides" name="item_description" required>
                 <label for="itemdescription" style="color:black;">Item Description:</label>
             </div>
             <br>

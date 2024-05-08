@@ -18,12 +18,12 @@ import java.util.List;
  */
 public class CatDAO {
   //db connection
-    private String url = "jdbc:mysql://localhost:3306/panchikawaththa";
+    private String url = "jdbc:mysql://localhost:3308/panchikawaththa";
     private String username="root";
     private String password="";
     
-    //private static final String insertCategories="insert into products(id,name,image) values(?,?,?)";
-   // private static final String selectCategories="Select * from product_category where id= ?";
+    private static final String insertCategories="insert into products(id,name,image) values(?,?,?)";
+    private static final String selectCategories="Select * from product_category where id= ?";
     private static final String selectAllCategories="Select * from product_category";
 
     protected Connection getConnection(){
@@ -40,7 +40,7 @@ public class CatDAO {
             e.printStackTrace();
         }
         catch(ClassNotFoundException e){
-            System.out.println("Classs not foun!");
+            System.out.println("Classs not found!");
             e.printStackTrace();
         }
         return connection;
@@ -74,7 +74,4 @@ public class CatDAO {
        }
        return categories;
     }
-    
-    
-   
 }

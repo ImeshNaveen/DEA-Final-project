@@ -1,6 +1,15 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<%
+    // Check if session exists
+    if (session.getAttribute("userId") == null) {
+        // Session is created and userId attribute is set
+        response.sendRedirect("../login.jsp?status=1");
+    } 
+%>
+    
 <!doctype html>
 <html lang="en">
-
 
 <!-- Mirrored from risingtheme.com/html/demo-partsix/partsix/my-account.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 17:35:43 GMT -->
 <head>
@@ -50,6 +59,7 @@
                         <ul class="account__menu">
                             <li class="account__menu--list"><a href="?page=dashboard">Dashboard</a></li>
                             <li class="account__menu--list"><a href="?page=oders">My Oders</a></li>
+                            <li class="account__menu--list"><a href="?page=userList">User List</a></li>
                             <li class="account__menu--list"><a href="?page=profile">Profile</a></li>
                             <li class="account__menu--list"><a href="?page=add-items">Add Items</a></li>
                             <li class="account__menu--list"><a href="?page=add-brand">Add Brand</a></li>
@@ -104,7 +114,13 @@
                             <jsp:include page="contents/add-model.jsp"/>
                         <%
                            }
-                    %>
+
+                           if ("userList".equals(loadpage)){
+                        %>
+                            <jsp:include page="contents/userList.jsp" />
+                        <%
+                            }
+                        %>
                     
                     <!-- this area for contents -->
                     

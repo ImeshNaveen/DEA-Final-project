@@ -246,7 +246,7 @@
                                                         <span class="rating__review--text">(126) Review</span>
                                                     </li>
                                                 </ul>
-                                                <h3 class="product__card--title"><a href="product-details.html">Amazon Cloud Cam Security
+                                                <h3 class="product__card--title"><a href="product-details.jsp?productId=1">Amazon Cloud Cam Security
                                                     Camera </a></h3>
                                                 <div class="product__card--price">
                                                     <span class="current__price">$239.52</span>

@@ -1,11 +1,18 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page import="productPackege.Product, productPackege.ProductDAO" %>
+
+
 <!doctype html>
 <html lang="en">
+
+    
+
 
 
 <!-- Mirrored from risingtheme.com/html/demo-partsix/partsix/product-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 17:35:38 GMT -->
 <head>
   <meta charset="utf-8">
-  <title>Partsix - Product Details</title>
+  <title>Panchikawaththa - Product Details</title>
   <meta name="description" content="Morden Bootstrap HTML5 Template">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
@@ -23,6 +30,25 @@
 
 </head>
 
+<%
+    // Initialize product as null
+    Product product = null;
+    
+    // Retrieve productId parameter from URL
+    String productIdString = request.getParameter("productId");
+    if (productIdString != null && !productIdString.isEmpty()) {
+        try {
+            int productId = Integer.parseInt(productIdString); // Parse item ID as integer
+            // Get product details from database based on productId
+            product = ProductDAO.selectProduct(productId);
+        } catch (NumberFormatException e) {
+            // Handle parsing error (invalid productId)
+            // For example, you can redirect or display an error message
+            e.printStackTrace(); // Log the exception
+        }
+    }
+%>
+
 <body>
 
     <!-- Start preloader -->
@@ -34,6 +60,8 @@
     <!-- End header area -->
 
     <main class="main__content_wrapper">
+        
+    
         
         <!-- Start breadcrumb section -->
         <section class="breadcrumb__section breadcrumb__bg">
@@ -64,7 +92,7 @@
                                         <div class="product__media--preview__items">
                                             <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="assets/img/product/big-product/product2.webp"><img class="product__media--preview__items--img" src="assets/img/product/big-product/product2.webp" alt="product-media-img"></a>
                                             <div class="product__media--view__icon">
-                                                <a class="product__media--view__icon--link glightbox" href="assets/img/product/big-product/product2.webp" data-gallery="product-media-preview">
+                                                <a class="product__media--view__icon--link glightbox" href="assets/img/product/<%=product.getImage()%>" data-gallery="product-media-preview">
                                                     <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
                                                     <span class="visually-hidden">product view</span> 
                                                 </a>
@@ -75,7 +103,7 @@
                                         <div class="product__media--preview__items">
                                             <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="assets/img/product/big-product/product6.webp"><img class="product__media--preview__items--img" src="assets/img/product/big-product/product6.webp" alt="product-media-img"></a>
                                             <div class="product__media--view__icon">
-                                                <a class="product__media--view__icon--link glightbox" href="assets/img/product/big-product/product6.webp" data-gallery="product-media-preview">
+                                                <a class="product__media--view__icon--link glightbox" href="assets/img/product/<%=product.getImage()%>" data-gallery="product-media-preview">
                                                     <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
                                                     <span class="visually-hidden">product view</span> 
                                                 </a>
@@ -86,7 +114,7 @@
                                         <div class="product__media--preview__items">
                                             <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="assets/img/product/big-product/product3.webp"><img class="product__media--preview__items--img" src="assets/img/product/big-product/product3.webp" alt="product-media-img"></a>
                                             <div class="product__media--view__icon">
-                                                <a class="product__media--view__icon--link glightbox" href="assets/img/product/big-product/product3.webp" data-gallery="product-media-preview">
+                                                <a class="product__media--view__icon--link glightbox" href="assets/img/product/<%=product.getImage()%>" data-gallery="product-media-preview">
                                                     <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
                                                     <span class="visually-hidden">product view</span> 
                                                 </a>
@@ -97,7 +125,7 @@
                                         <div class="product__media--preview__items">
                                             <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="assets/img/product/big-product/product4.webp"><img class="product__media--preview__items--img" src="assets/img/product/big-product/product4.webp" alt="product-media-img"></a>
                                             <div class="product__media--view__icon">
-                                                <a class="product__media--view__icon--link glightbox" href="assets/img/product/big-product/product4.webp" data-gallery="product-media-preview">
+                                                <a class="product__media--view__icon--link glightbox" href="assets/img/product/<%=product.getImage()%>" data-gallery="product-media-preview">
                                                     <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
                                                     <span class="visually-hidden">product view</span> 
                                                 </a>
@@ -108,7 +136,7 @@
                                         <div class="product__media--preview__items">
                                             <a class="product__media--preview__items--link glightbox" data-gallery="product-media-preview" href="assets/img/product/big-product/product5.webp"><img class="product__media--preview__items--img" src="assets/img/product/big-product/product5.webp" alt="product-media-img"></a>
                                             <div class="product__media--view__icon">
-                                                <a class="product__media--view__icon--link glightbox" href="assets/img/product/big-product/product5.webp" data-gallery="product-media-preview">
+                                                <a class="product__media--view__icon--link glightbox" href="assets/img/product/<%=product.getImage()%>" data-gallery="product-media-preview">
                                                     <svg class="product__items--action__btn--svg" xmlns="http://www.w3.org/2000/svg" width="22.51" height="22.443" viewBox="0 0 512 512"><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path></svg>
                                                     <span class="visually-hidden">product view</span> 
                                                 </a>
@@ -157,11 +185,9 @@
                     <div class="col">
                         <div class="product__details--info">
                             <form action="#">
-                                <h2 class="product__details--info__title mb-15">Amazon Cloud Cam Security
-                                    Camera</h2>
+                                <h2 class="product__details--info__title mb-15"><%= product.getName() %></h2>
                                 <div class="product__details--info__price mb-12">
-                                    <span class="current__price">$58.00</span>
-                                    <span class="old__price">$68.00</span>
+                                    <span class="current__price">Rs. <%= product.getPrice() %>/=</span>
                                 </div>
                                 <ul class="rating product__card--rating mb-15 d-flex">
                                     <li class="rating__list">
@@ -203,46 +229,20 @@
                                         <span class="rating__review--text">(126) Review</span>
                                     </li>
                                 </ul>
-                                <p class="product__details--info__desc mb-15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam ullam is recusandae laborum explicabo id sequi quisquam, ab sunt deleniti quidem ea animi facilis quod nostrum odit! Repellendus voluptas suscipit cum harum.</p>
+                                <p class="product__details--info__desc mb-15"><%= product.getDescription() %></p>
                                 <div class="product__variant">
                                     <div class="product__variant--list mb-10">
                                         <fieldset class="variant__input--fieldset">
                                             <legend class="product__variant--title mb-8">Color :</legend>
-                                            <div class="variant__color d-flex">
-                                                <div class="variant__color--list">
-                                                    <input id="color-red5" name="color" type="radio" checked>
-                                                    <label class="variant__color--value red" for="color-red5" title="Red"><img class="variant__color--value__img" src="assets/img/product/small-product/product1.webp" alt="variant-color-img"></label>
-                                                </div>
-                                                <div class="variant__color--list">
-                                                    <input id="color-red6" name="color" type="radio">
-                                                    <label class="variant__color--value red" for="color-red6" title="Black"><img class="variant__color--value__img" src="assets/img/product/small-product/product2.webp" alt="variant-color-img"></label>
-                                                </div>
-                                                <div class="variant__color--list">
-                                                    <input id="color-red7" name="color" type="radio">
-                                                    <label class="variant__color--value red" for="color-red7" title="Pink"><img class="variant__color--value__img" src="assets/img/product/small-product/product3.webp" alt="variant-color-img"></label>
-                                                </div>
-                                                <div class="variant__color--list">
-                                                    <input id="color-red8" name="color" type="radio">
-                                                    <label class="variant__color--value red" for="color-red8" title="Orange"><img class="variant__color--value__img" src="assets/img/product/small-product/product4.webp" alt="variant-color-img"></label>
-                                                </div>
-                                            </div>
+                                            
                                         </fieldset>
                                     </div>
                                     <div class="product__variant--list mb-20">
                                         <fieldset class="variant__input--fieldset">
-                                            <legend class="product__variant--title mb-8">Weight :</legend>
+                                            <legend class="product__variant--title mb-8">Posted on :</legend>
                                             <ul class="variant__size d-flex">
                                                 <li class="variant__size--list">
-                                                    <input id="weight4" name="weight" type="radio" checked>
-                                                    <label class="variant__size--value red" for="weight4">5 kg</label>
-                                                </li>
-                                                <li class="variant__size--list">
-                                                    <input id="weight5" name="weight" type="radio">
-                                                    <label class="variant__size--value red" for="weight5">3 kg</label>
-                                                </li>
-                                                <li class="variant__size--list">
-                                                    <input id="weight6" name="weight" type="radio">
-                                                    <label class="variant__size--value red" for="weight6">2 kg</label>
+                                                    <%= product.getDateTime() %>
                                                 </li>
                                             </ul>
                                         </fieldset>
@@ -266,10 +266,10 @@
                                     </div>
                                     <div class="product__variant--list mb-15">
                                         <div class="product__details--info__meta">
-                                            <p class="product__details--info__meta--list"><strong>Barcode:</strong>  <span> 565461</span> </p>
-                                            <p class="product__details--info__meta--list"><strong>Sky:</strong>  <span>4420</span> </p>
-                                            <p class="product__details--info__meta--list"><strong>Vendor:</strong>  <span>Belo</span> </p>
-                                            <p class="product__details--info__meta--list"><strong>Type:</strong>  <span>Auto Parts</span> </p>
+                                            <p class="product__details--info__meta--list"><strong>Model:</strong>  <span> <%= product.getModle() %></span> </p>
+                                            <p class="product__details--info__meta--list"><strong>Year: </strong>  <span> <%= product.getYear() %></span> </p>
+                                            <p class="product__details--info__meta--list"><strong>Condition:</strong>  <span> <%= product.getItemCondition() %></span> </p>
+                                            <p class="product__details--info__meta--list"><strong>Type:</strong>  <span><%= product.getCategory_id() %></span> </p>
                                         </div>
                                     </div>
                                 </div>
@@ -337,49 +337,12 @@
                                 <div id="description" class="tab_pane active show">
                                     <div class="product__tab--content">
                                         <div class="product__tab--content__step mb-30">
-                                            <h2 class="product__tab--content__title h4 mb-10">Nam provident sequi</h2>
-                                            <p class="product__tab--content__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam provident sequi, nemo sapiente culpa nostrum rem eum perferendis quibusdam, magnam a vitae corporis! Magnam enim modi, illo harum suscipit tempore aut dolore doloribus deserunt voluptatum illum, est porro? Ducimus dolore accusamus impedit ipsum maiores, ea iusto temporibus numquam eaque mollitia fugiat laborum dolor tempora eligendi voluptatem quis necessitatibus nam ab?</p>
+                                            <h2 class="product__tab--content__title h4 mb-10"><%=product.getName()%></h2>
+                                            <p class="product__tab--content__desc"><%=product.getDescription()%></p>
                                         </div>
-                                        <div class="product__tab--content__step style2 d-flex align-items-center mb-30">
-                                            <div class="product__tab--content__banner">
-                                                <img class="product__tab--content__banner--img border-radius-5" src="assets/img/other/car-banner-img.webp" alt="banner-img">
-                                            </div>
-                                            <div class="product__tab--content__right">
-                                                <p class="product__tab--content__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi tempora quibusdam libero possimus magni impedit a, facere recusandae eos ut at quod sed praesentium!</p>
-                                                <div class="image__with--text__percent product__tab--percent__style">
-                                                    <ul>
-                                                        <li class="image__with--text__percent--list mb-20">
-                                                            <span class="image__with--text__percent--top d-flex justify-content-between align-content-center">
-                                                                <span class="image__with--text__percent--content">Integrative control</span>
-                                                                <span class="image__with--text__percent--content">58%</span>
-                                                            </span>
-                                                        </li>
-                                                        <li class="image__with--text__percent--list two mb-20">
-                                                            <span class="image__with--text__percent--top d-flex justify-content-between align-content-center">
-                                                                <span class="image__with--text__percent--content">Design Device</span>
-                                                                <span class="image__with--text__percent--content">77%</span>
-                                                            </span>
-                                                        </li>
-                                                        <li class="image__with--text__percent--list three mb-20">
-                                                            <span class="image__with--text__percent--top d-flex justify-content-between align-content-center">
-                                                                <span class="image__with--text__percent--content">Service Control</span>
-                                                                <span class="image__with--text__percent--content">58%</span>
-                                                            </span>
-                                                        </li>
-                                                        <li class="image__with--text__percent--list four">
-                                                            <span class="image__with--text__percent--top d-flex justify-content-between align-content-center">
-                                                                <span class="image__with--text__percent--content">Metar Surusn</span>
-                                                                <span class="image__with--text__percent--content">69%</span>
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </div>  
-                                            </div>
-                                        </div>
+                                        
                                         <div class="product__tab--content__step">
-                                            <p class="product__tab--content__desc">Polor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio
-                                                lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. 
-                                                Nulla facilisi. Nulla libero. Vivamus pharetra posuere.</p>
+                                            <p class="product__tab--content__desc"></p>
                                         </div>
                                     </div> 
                                 </div>
@@ -651,24 +614,28 @@
                                         <div class="product__tab--content__step">
                                             <ul class="additional__info_list">
                                                 <li class="additional__info_list--item">
-                                                    <span class="info__list--item-head"><strong>Color</strong></span>
-                                                    <span class="info__list--item-content">Black, white, blue, red, gray</span>
+                                                    <span class="info__list--item-head"><strong>Posted on</strong></span>
+                                                    <span class="info__list--item-content"><%=product.getDateTime()%></span>
                                                 </li>
                                                 <li class="additional__info_list--item">
                                                     <span class="info__list--item-head"><strong>Weight</strong></span>
-                                                    <span  class="info__list--item-content">2kg</span>
+                                                    <span  class="info__list--item-content"><%=product.getItemCondition()%></span>
                                                 </li>
                                                 <li class="additional__info_list--item">
                                                     <span class="info__list--item-head"><strong>Brand</strong></span>
-                                                    <span class="info__list--item-content">Gadget</span>
+                                                    <span class="info__list--item-content"><%=product.getBrand_id() %></span>
                                                 </li>
                                                 <li class="additional__info_list--item">
-                                                    <span class="info__list--item-head"><strong>Guarantee</strong></span>
-                                                    <span class="info__list--item-content">5 years</span>
+                                                    <span class="info__list--item-head"><strong>Price</strong></span>
+                                                    <span class="info__list--item-content"><%=product.getPrice() %></span>
                                                 </li>
                                                 <li class="additional__info_list--item">
-                                                    <span class="info__list--item-head"><strong>Battery</strong></span>
-                                                    <span class="info__list--item-content">10000 mA</span>
+                                                    <span class="info__list--item-head"><strong>Model:</strong></span>
+                                                    <span class="info__list--item-content"><%=product.getModle() %> </span>
+                                                </li>
+                                                <li class="additional__info_list--item">
+                                                    <span class="info__list--item-head"><strong>Category:</strong></span>
+                                                    <span class="info__list--item-content"><%=product.getCategory_id() %> </span>
                                                 </li>
                                             </ul>
                                         </div>
