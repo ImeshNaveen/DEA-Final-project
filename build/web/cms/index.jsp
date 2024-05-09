@@ -61,6 +61,7 @@
                             <li class="account__menu--list"><a href="?page=oders">My Oders</a></li>
                             <li class="account__menu--list"><a href="?page=userList">User List</a></li>
                             <li class="account__menu--list"><a href="?page=profile">Profile</a></li>
+                            <li class="account__menu--list"><a href="?page=add-cat">Add Category</a></li>
                             <li class="account__menu--list"><a href="?page=add-items">Add Items</a></li>
                             <li class="account__menu--list"><a href="?page=add-brand">Add Brand</a></li>
                             <li class="account__menu--list"><a href="?page=add-model">Add Model</a></li>
@@ -92,7 +93,13 @@
                             <jsp:include page="contents/profile.jsp"/>
                         <%
                            }
+
+                        if ("add-cat".equals(loadpage)){
+                        %>
                         
+                            <jsp:include page="contents/add-cat.jsp"/>
+                        <%
+                           }
                         
                         if ("add-items".equals(loadpage)){
                         %>
