@@ -67,6 +67,7 @@ public class categoryServelet extends HttpServlet {
         Category catOBJ = new Category(name, image);
         catDAO.insertCat(catOBJ);
         System.out.println("Add Category Method End!");
+        //running
     }
     
     private void show_index(HttpServletRequest req,HttpServletResponse res)
