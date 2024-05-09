@@ -62,7 +62,7 @@ public class categoryServelet extends HttpServlet {
         System.out.println("Add Category Method");
         
         String name = req.getParameter("name"); 
-        String image = req.getParameter("image");
+        String image = "cat-image.jpg";
         
         Category catOBJ = new Category(name, image);
         catDAO.insertCat(catOBJ);
