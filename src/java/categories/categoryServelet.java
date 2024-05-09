@@ -37,6 +37,10 @@ public class categoryServelet extends HttpServlet {
             case "new":
                 System.out.println("new route");
                 break;
+            case"addcat":
+                System.out.println("new category added!");
+                addCat(req,res);
+                break;
             case "categories":
                 show_index(req,res);
                 break;
@@ -50,6 +54,19 @@ public class categoryServelet extends HttpServlet {
             throws ServletException,IOException
     {
         this.doGet(req, res);
+    }
+    
+        private void addCat(HttpServletRequest req,HttpServletResponse res)
+            throws ServletException,IOException{
+        
+        System.out.println("Add Category Method");
+        
+        String name = req.getParameter("name"); 
+        String image = req.getParameter("image");
+        
+        Category catOBJ = new Category(name, image);
+        catDAO.insertCat(catOBJ);
+        System.out.println("Add Category Method End!");
     }
     
     private void show_index(HttpServletRequest req,HttpServletResponse res)

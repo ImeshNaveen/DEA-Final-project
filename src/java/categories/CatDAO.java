@@ -22,9 +22,10 @@ public class CatDAO {
     private String username="root";
     private String password="";
     
-    private static final String insertCategories="insert into products(id,name,image) values(?,?,?)";
+    private static final String insertCategories="insert into product_category(id,name,image) values(?,?,?)";
     private static final String selectCategories="Select * from product_category where id= ?";
     private static final String selectAllCategories="Select * from product_category";
+
 
     protected Connection getConnection(){
         
@@ -45,6 +46,24 @@ public class CatDAO {
         }
         return connection;
     }
+    
+    public void insertCat(Category category){
+        try{
+            Connection conn = getConnection();
+            PreparedStatement stmt= conn.prepareStatement(insertCategories);
+            stmt.setString(1,category.getName());
+            stmt.setString(2,category.getImage());
+            stmt.executeUpdate();
+            System.out.println(category.getName()+"inserted!");
+            conn.close();
+            System.out.println("Connection closed");
+             
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+    }
+            
     public List<Category> selectallcategory(){
        List<Category> categories = new ArrayList<>();
        Category category = null;
