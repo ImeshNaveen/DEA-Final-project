@@ -12,7 +12,7 @@ import java.util.List;
 public class WishlistDAO {
     
     //db connection
-    private String database_url = "jdbc:mysql://localhost:3308/panchikawaththa";
+    private String database_url = "jdbc:mysql://localhost:3306/panchikawaththa";
     private String database_username = "root";
     private String database_password = "";
     

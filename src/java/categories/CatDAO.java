@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class CatDAO {
   //db connection
-    private String url = "jdbc:mysql://localhost:3308/panchikawaththa";
+    private String url = "jdbc:mysql://localhost:3306/panchikawaththa";
     private String username="root";
     private String password="";
     

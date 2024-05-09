@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ProductDAO {
     //db connection
-    private String url = "jdbc:mysql://localhost:3308/panchikawaththa";
+    private String url = "jdbc:mysql://localhost:3306/panchikawaththa";
     private String username="root";
     private String password="";
     
@@ -51,7 +51,7 @@ public class ProductDAO {
     }
     
     public static Connection getConnection() throws SQLException {
-        String url = "jdbc:mysql://localhost:3308/panchikawaththa";
+        String url = "jdbc:mysql://localhost:3306/panchikawaththa";
         String username = "root";
         String password = "";
         System.out.println("Connection started!");
@@ -81,6 +81,8 @@ public class ProductDAO {
                 int year = productDetails.getInt("year");
                 String price = productDetails.getString("price");
                 product = new Product(product_id,product_name, brand_id, category_id, model, condition, description, image, dateTime, year, price);
+               //product.add(new Product(product_id,product_name, brand_id, category_id, model, condition, description, image, dateTime, year, price));
+
             }
 
             System.out.println("Product selected successfully!");
@@ -112,7 +114,7 @@ public class ProductDAO {
                 String date_time = productDetails.getString("dateTime");
                 int product_year=productDetails.getInt("year");
                 String product_price=productDetails.getString("price");
-                product= new Product(product_id,product_name,brand_id,category_id,product_modle,item_condition,product_discription,product_image,date_time,product_year,product_price);
+                products.add(new Product(product_id,product_name,brand_id,category_id,product_modle,item_condition,product_discription,product_image,date_time,product_year,product_price));
             }
             conn.close();
             System.out.println("Connection closed!");

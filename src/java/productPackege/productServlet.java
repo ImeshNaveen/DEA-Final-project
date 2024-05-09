@@ -101,9 +101,12 @@ public class productServlet extends HttpServlet {
         try{
             List<Product> allProducts = ProductDAO.selectProducts();
             
-            RequestDispatcher dispatcher = req.getRequestDispatcher("shop.jsp");
+             RequestDispatcher dispatcher1 = req.getRequestDispatcher("/shop.jsp");
             req.setAttribute("allProducts", allProducts);
-            dispatcher.forward(req, res);
+            dispatcher1.forward(req, res);
+            RequestDispatcher dispatcher2 = req.getRequestDispatcher("/index.jsp");
+            req.setAttribute("allProducts", allProducts);
+            dispatcher2.forward(req, res);
         }
         catch(IOException | ServletException e){
             e.printStackTrace();
