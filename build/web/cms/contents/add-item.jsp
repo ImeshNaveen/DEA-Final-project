@@ -61,7 +61,7 @@
             <br>
             <div class="user-box">
                 <input type="text" id="ides" name="item_description" required>
-                <label for="itemdescription" style="color:black;">Item Description:</label>
+                <label for="itemdescription" ">Item Description:</label>
             </div>
             <br>
             
@@ -80,7 +80,7 @@
             <br><br>
             <div class="user-box">
                 <input type="number" id="price" name="price" min="0" step="0.01" required>
-                <label for="price" style="color:black;">Price:</label>
+                <label for="price" ">Price:</label>
             </div>
             <div class="form-btn">
                 <input type="submit" value="Submit" class="submit">

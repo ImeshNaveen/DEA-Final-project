@@ -20,7 +20,7 @@
               <br>
             <div class="user-box">
                 <input type="text" vlaue="" name="name" required>
-                <label for="Name" style="color:black;">Model Name:</label>
+                <label for="Name" >Model Name:</label>
             </div>
 
             
@@ -28,7 +28,7 @@
             
             <div class="user-box">
                 <input type="text" vlaue="" name="year" required>
-                <label for="Name" style="color:black;">Model Year:</label>
+                <label for="Name" >Model Year:</label>
             </div>
 
             <br><br>

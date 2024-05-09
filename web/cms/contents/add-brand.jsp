@@ -9,7 +9,7 @@
                 <h1>Add New Brand</h1><br>
             <div class="user-box">
                 <input type="text" vlaue="" name="name" required>
-                <label for="Name" style="color:black;">Brand Name:</label>
+                <label for="Name" >Brand Name:</label>
             </div>
 
             <div class="">
