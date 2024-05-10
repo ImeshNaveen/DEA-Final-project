@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 08, 2024 at 03:11 PM
+-- Generation Time: May 10, 2024 at 05:50 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `panchikawaththa`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart`
+--
+
+CREATE TABLE `cart` (
+  `id` int(8) NOT NULL,
+  `user_id` int(5) NOT NULL,
+  `product_id` int(6) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`id`, `user_id`, `product_id`) VALUES
+(1, 32, 54);
 
 -- --------------------------------------------------------
 
@@ -46,7 +65,8 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `brand_id`, `category_id`, `model`, `itemCondition`, `description`, `image`, `dateTime`, `year`, `price`) VALUES
-(1, 'Brake liners Brembo break', 45, 34, 'Breamboo', 'Good Product 74% condition', 'This is item description', 'vehical.jpeg', '2024-05-05 23:12', 2024, '25,000');
+(1, 'Brake liners Brembo break', 45, 1, 'Breamboo', 'Good Product 74% condition', 'This is item description', 'vehical.jpeg', '2024-05-05 23:12', 2024, '25,000'),
+(2, 'Toyota KDH', 45, 2, 'ccc', 'on', 'This is good vehical', 'vehical.jpeg', '2024-05-05 23:12', 2024, '67500');
 
 -- --------------------------------------------------------
 
@@ -162,14 +182,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `email`, `password`, `mobile`, `image`, `address`, `city_id`) VALUES
-(1, 'Binod Perera', 'yasindubinod7@gmail.com', 'binod1234', '0712832957', 'user.lpg', 'No 5/A, NAWAGAMUGODA ROAD,\r\nKUBUKA, GONAPALA JUNCTION', 5),
 (2, 'Janith Chamuditha', 'janith@gmail.com', 'janith123', '0712833254', 'user.lpg', 'No 51/A, Kandy road,\r\nPadiyapalella, Hanguranketha', 5),
 (3, 'binodperera', 'yasindubinod7@gmail.com', 'yasi', '0712832957', 'user.lpg', 'No 5/A, NAWAGAMUGODA ROAD,\r\nKUBUKA, GONAPALA JUNCTION', 5),
-(4, 'binodperera', 'yasindubinod7@gmail.com', 'yasi', '0712832957', 'user.lpg', 'No 5/A, NAWAGAMUGODA ROAD,\r\nKUBUKA, GONAPALA JUNCTION', 5),
-(5, '', '', '', '', 'user.lpg', '', 5),
-(6, 'user', 'user@gmail.com', 'root', '0718327753', 'user.lpg', 'No 5/A, NAWAGAMUGODA ROAD,\r\nKUBUKA, GONAPALA JUNCTION', 5),
-(7, 'Binod07', 'yasindubinod7@gmail.com', 'root', '0712832957', 'user.lpg', 'No 5/A, NAWAGAMUGODA ROAD,\r\nKUBUKA, GONAPALA JUNCTION', 5),
-(8, 'Nilanthi123', 'yasindubinod7@gmail.com', 'nila', '0712832957', 'user.lpg', 'No 5/A, NAWAGAMUGODA ROAD,\r\nKUBUKA, GONAPALA JUNCTION', 5);
+(6, 'user', 'user@gmail.com', 'root', '0718327753', 'user.lpg', 'No 5/A, NAWAGAMUGODA ROAD,\r\nKUBUKA, GONAPALA JUNCTION', 5);
 
 -- --------------------------------------------------------
 
@@ -186,6 +201,12 @@ CREATE TABLE `wishlist` (
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `products`
@@ -246,10 +267,16 @@ ALTER TABLE `wishlist`
 --
 
 --
+-- AUTO_INCREMENT for table `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `products_additional`
@@ -267,7 +294,7 @@ ALTER TABLE `product_brand`
 -- AUTO_INCREMENT for table `product_category`
 --
 ALTER TABLE `product_category`
-  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `product_order`
