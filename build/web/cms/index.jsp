@@ -63,6 +63,7 @@
                             <li class="account__menu--list"><a href="?page=profile">Profile</a></li>
                             <li class="account__menu--list"><a href="?page=add-cat">Add Category</a></li>
                             <li class="account__menu--list"><a href="?page=add-items">Add Items</a></li>
+                             <li class="account__menu--list"><a href="?page=item-list">Edit Items</a></li>
                             <li class="account__menu--list"><a href="?page=add-brand">Add Brand</a></li>
                             <li class="account__menu--list"><a href="?page=add-model">Add Model</a></li>
                         </ul>
@@ -125,6 +126,11 @@
                            if ("userList".equals(loadpage)){
                         %>
                             <jsp:include page="contents/userList.jsp" />
+                        <%
+                            }
+                            if ("item-list".equals(loadpage)){
+                        %>
+                            <jsp:include page="contents/item-list.jsp" />
                         <%
                             }
                         %>
