@@ -1,21 +1,5 @@
 <footer class="footer__section footer__bg">
         <div class="container">
-            <div class="newsletter__area">
-                <div class="newsletter__inner d-flex justify-content-between align-items-center">
-                    <div class="newsletter__content">
-                        <h2 class="newsletter__title">Subscribe <span class="text__secondary">Newsletter</span></h2>
-                        <p class="newsletter__desc">Don’t wait make a smart & logical quote here. Its pretty easy.</p>
-                    </div>
-                    <div class="newsletter__subscribe">
-                        <form class="newsletter__subscribe--form" action="#">
-                            <label>
-                                <input class="newsletter__subscribe--input" placeholder=" Enter Your Email" type="text">
-                            </label>
-                            <button class="newsletter__subscribe--button" type="submit">Subscribe Now</button>
-                        </form>   
-                    </div> 
-                </div>
-            </div>
             <div class="main__footer">
                 <div class="row ">
                     <div class="col-lg-4 col-md-10">
@@ -26,10 +10,8 @@
                                 </svg>
                             </h2>
                             <div class="footer__widget--inner">
-                                <p class="footer__widget--desc">Corporate clients and leisure travelers has
-                                    been relying on Groundlink for dependable
-                                    safe, and professional chauffeured car end
-                                    service in major cities across World.</p>
+                                <p class="footer__widget--desc">Best automobile parts in Sri Lanka. Find your
+                                    own automobile parts.</p>
                                 <ul class="social__share footer__social d-flex">
                                     <li class="social__share--list">
                                         <a class="social__share--icon__style2" target="_blank" href="https://www.facebook.com/">
@@ -76,11 +58,11 @@
                             </h2>
                             <ul class="footer__widget--menu footer__widget--inner">
                                 
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="my-account.html">My Account</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="cart.html">Shopping Cart</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="cart.html">Login</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="login.html">Register</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="checkout.html">Checkout</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="my-account.jsp">My Account</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="cart.jsp">Shopping Cart</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="cart.jsp">Login</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="login.jsp">Register</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="checkout.jsp">Checkout</a></li>
                             </ul>
                         </div>
                     </div>
@@ -92,11 +74,11 @@
                                 </svg>
                             </h2>
                             <ul class="footer__widget--menu footer__widget--inner">
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="contact.html">Contact Us</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="about.html">About Us</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="wishlist.html">Wishlist</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="privacy-policy.html">Privacy Policy</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="faq.html">Frequently</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="contact.jsp">Contact Us</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="about.jsp">About Us</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="wishlist.jsp">Wishlist</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="privacy-policy.jsp">Privacy Policy</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="faq.jsp">Frequently</a></li>
                             </ul>
                         </div>
                     </div>
@@ -108,11 +90,11 @@
                                 </svg>
                             </h2>
                             <ul class="footer__widget--menu footer__widget--inner">
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="shop.html">Smartphone ablet</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="shop.html">Computer Laptop</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="shop.html">TV & Audio</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="shop.html">Car Accessories</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="shop.html">Cameras Photos</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="shop.jsp">Smartphone ablet</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="shop.jsp">Computer Laptop</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="shop.jsp">TV & Audio</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="shop.jsp">Car Accessories</a></li>
+                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text" href="shop.jsp">Cameras Photos</a></li>
                             </ul>
                         </div>
                     </div>
@@ -123,12 +105,10 @@
             <div class="container">
                 <div class="footer__bottom--inenr d-flex justify-content-between align-items-center">
                     <div class="footer__logo">
-                        <a class="footer__logo--link" href="index.html"><img src="../assets/img/logo/nav-log-light.webp" alt="logo-img"></a>
+                        <a class="footer__logo--link" href="index.jsp"><img src="../assets/img/logo/main_logo.png" alt="logo-img" width="150" height="75"></a>
                     </div>
-                    <p class="copyright__content"><span class="text__secondary">© 2022</span> Powered by <a class="copyright__content--link" target="_blank" href="https://themeforest.net/search/hooktheme">Hooktheme</a> .  All Rights Reserved.</p>
-                    <div class="footer__payment">
-                        <img src="../assets/img/icon/payment-img.webp" alt="payment-img">
-                    </div>
+                    <p class="copyright__content"><span class="text__secondary"> 2024</span> Powered by <a class="copyright__content--link" target="_blank" href="https://themeforest.net/search/hooktheme">NSBM Green University</a> .  All Rights Reserved.</p>
+                    
                 </div>
             </div>
         </div>

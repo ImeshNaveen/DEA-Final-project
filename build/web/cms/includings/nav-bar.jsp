@@ -28,10 +28,6 @@
                                 
                             </li>
                             <li class="header__menu--items">
-                                <a class="header__menu--link" href="../shop.jsp" id="custom_color">Accesories </a>  
-                            </li>
-                            
-                            <li class="header__menu--items">
                                 <a class="header__menu--link" href="../contact.jsp" id="custom_color">Contact </a>  
                             </li>
                         </ul>
