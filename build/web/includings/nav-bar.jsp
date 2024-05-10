@@ -47,12 +47,6 @@
                                 <span class="visually-hidden">My account</span> 
                             </a>
                         </li>
-                        <li class="header__account--items d-none d-lg-block">
-                            <a class="header__account--btn" href="wishlist.jsp" id="custom_color">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                                <span class="items__count">3</span> 
-                            </a>
-                        </li>
                         <li class="header__account--items header__minicart--items">
                             <a class="header__account--btn minicart__open--btn" href="javascript:void(0)" data-offcanvas id="custom_color">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22.706" height="22.534" viewBox="0 0 14.706 13.534">
@@ -184,15 +178,7 @@
                     <span class="items__count">3</span> 
                 </a>
             </li>
-            <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="wishlist.jsp">
-                    <span class="offcanvas__stikcy--toolbar__icon" id="custom_color"> 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" -heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                    </span>
-                    <span class="offcanvas__stikcy--toolbar__label" id="custom_color">Wishlist</span>
-                    <span class="items__count">3</span> 
-                </a>
-            </li>
+            
         </ul>
     </div>
     <!-- End Offcanvas stikcy toolbar -->
