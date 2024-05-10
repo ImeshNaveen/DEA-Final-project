@@ -57,7 +57,7 @@
                     <div class="account__left--sidebar">
                         <h2 class="account__content--title mb-20">My Profile</h2>
                         <ul class="account__menu">
-                            <li class="account__menu--list"><a href="?page=dashboard">Dashboard</a></li>
+                            <li class="account__menu--list"><a href="?page=dashboard">Product list</a></li>
                             <li class="account__menu--list"><a href="?page=oders">My Oders</a></li>
                             <li class="account__menu--list"><a href="?page=userList">User List</a></li>
                             <li class="account__menu--list"><a href="?page=profile">Profile</a></li>

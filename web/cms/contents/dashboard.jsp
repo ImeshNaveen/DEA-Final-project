@@ -1,3 +1,6 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page import="java.util.List"%>
+<%@ page import="productPackege.Product, productPackege.ProductDAO" %>
 <div class="account__wrapper">
                         <div class="account__content">
                             <h2 class="account__content--title h3 mb-20">Orders History</h2>
@@ -5,63 +8,50 @@
                                 <table class="account__table">
                                     <thead class="account__table--header">
                                         <tr class="account__table--header__child">
-                                            <th class="account__table--header__child--items">Order</th>
-                                            <th class="account__table--header__child--items">Date</th>
-                                            <th class="account__table--header__child--items">Payment Status</th>
-                                            <th class="account__table--header__child--items">Fulfillment Status</th>
-                                            <th class="account__table--header__child--items">Total</th>	 	 	 	
+                                            <th class="account__table--header__child--items">Product</th>
+                                            <th class="account__table--header__child--items">Description</th>
+                                            <th class="account__table--header__child--items">condition</th>
+                                            <th class="account__table--header__child--items">year</th>
+                                            <th class="account__table--header__child--items">price</th>	 
+                                            <th class="account__table--header__child--items">Action</th>	 
                                         </tr>
                                     </thead>
                                     <tbody class="account__table--body mobile__none">
+                                        <% 
+                                                    Product product = null;
+                                                    List<Product> productList = null;
+                                                    
+                                                    if(request.getParameter("deleteId") == null){
+                                                        System.out.println("deleteId not set");
+                                                    }else{
+                                                        int deleteId = Integer.parseInt(request.getParameter("deleteId"));
+                                                        boolean value = ProductDAO.deleteProduct(deleteId);
+                                                        
+                                                    }
+                                                    
+                                                    if(request.getParameter("catId") == null){
+                                                        productList = ProductDAO.selectProducts();
+                                                    }else{
+                                                        int id = Integer.parseInt(request.getParameter("catId"));
+                                                        productList = ProductDAO.selectProducts(id);
+                                                    }
+                                                    
+                                                    for(Product prod: productList){
+                                                %>
                                         <tr class="account__table--body__child">
-                                            <td class="account__table--body__child--items">#2014</td>
-                                            <td class="account__table--body__child--items">November 24, 2022</td>
-                                            <td class="account__table--body__child--items">Paid</td>
-                                            <td class="account__table--body__child--items">Unfulfilled</td>
-                                            <td class="account__table--body__child--items">$40.00 USD</td>
+                                            <td class="account__table--body__child--items"><%= prod.getName() %></td>
+                                            <td class="account__table--body__child--items"><%= prod.getDescription() %></td>
+                                            <td class="account__table--body__child--items"><%= prod.getItemCondition() %></td>
+                                            <td class="account__table--body__child--items"><%= prod.getYear() %></td>
+                                            <td class="account__table--body__child--items"><%= prod.getPrice() %></td>
+                                            <td class="account__table--body__child--items">
+                                                <a href="?deleteId="><button>Delete</button></a>
+                                                <a href="?editId="><button>Edit</button></a>
+                                            </td>
                                         </tr>
-                                        <tr class="account__table--body__child">
-                                            <td class="account__table--body__child--items">#2024</td>
-                                            <td class="account__table--body__child--items">November 24, 2022</td>
-                                            <td class="account__table--body__child--items">Paid</td>
-                                            <td class="account__table--body__child--items">Fulfilled</td>
-                                            <td class="account__table--body__child--items">$44.00 USD</td>
-                                        </tr>
-                                        <tr class="account__table--body__child">
-                                            <td class="account__table--body__child--items">#2164</td>
-                                            <td class="account__table--body__child--items">November 24, 2022</td>
-                                            <td class="account__table--body__child--items">Paid</td>
-                                            <td class="account__table--body__child--items">Unfulfilled</td>
-                                            <td class="account__table--body__child--items">$36.00 USD</td>
-                                        </tr>
-                                        <tr class="account__table--body__child">
-                                            <td class="account__table--body__child--items">#2345</td>
-                                            <td class="account__table--body__child--items">November 24, 2022</td>
-                                            <td class="account__table--body__child--items">Paid</td>
-                                            <td class="account__table--body__child--items">Unfulfilled</td>
-                                            <td class="account__table--body__child--items">$87.00 USD</td>
-                                        </tr>
-                                        <tr class="account__table--body__child">
-                                            <td class="account__table--body__child--items">#1244</td>
-                                            <td class="account__table--body__child--items">November 24, 2022</td>
-                                            <td class="account__table--body__child--items">Paid</td>
-                                            <td class="account__table--body__child--items">Fulfilled</td>
-                                            <td class="account__table--body__child--items">$66.00 USD</td>
-                                        </tr>
-                                        <tr class="account__table--body__child">
-                                            <td class="account__table--body__child--items">#3455</td>
-                                            <td class="account__table--body__child--items">November 24, 2022</td>
-                                            <td class="account__table--body__child--items">Paid</td>
-                                            <td class="account__table--body__child--items">Fulfilled</td>
-                                            <td class="account__table--body__child--items">$55.00 USD</td>
-                                        </tr>
-                                        <tr class="account__table--body__child">
-                                            <td class="account__table--body__child--items">#4566</td>
-                                            <td class="account__table--body__child--items">November 24, 2022</td>
-                                            <td class="account__table--body__child--items">Paid</td>
-                                            <td class="account__table--body__child--items">Unfulfilled</td>
-                                            <td class="account__table--body__child--items">$87.00 USD</td>
-                                        </tr>
+                                        <%
+                                            }
+                                        %>
                                     </tbody>
                                     <tbody class="account__table--body mobile__block">
                                         <tr class="account__table--body__child">

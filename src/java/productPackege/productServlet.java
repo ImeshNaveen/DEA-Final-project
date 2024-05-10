@@ -131,5 +131,7 @@ public class productServlet extends HttpServlet {
         
         res.sendRedirect("../product-details.jsp");
     }
+    
+    
      
 }

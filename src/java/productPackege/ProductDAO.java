@@ -22,6 +22,7 @@ public class ProductDAO {
     private static final String insertProducts="insert into products(name,brand_id,category_id,model,itemCondition,description,image,dateTime,year,price) values(?,?,?,?,?,?,?,?,?,?)";
     private static final String selectProduct="Select * from products where id= ?";
     private static final String selectProducts="Select * from products";
+    private static final String deleteProduct="delete from products where id=?";
     
 
     
@@ -173,6 +174,20 @@ public class ProductDAO {
         return products;
     }
 
+    
+    public static boolean deleteProduct(int productId){
+        boolean rowDeleted = false;
+        try{
+            Connection connection = getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(deleteProduct);
+            preparedStatement.setInt(1, productId);
+            rowDeleted = preparedStatement.executeUpdate() > 0; 
+            System.out.println("Product deleted!");
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return rowDeleted;
+    }
     
 
 
